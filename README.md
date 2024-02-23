@@ -1333,7 +1333,7 @@ flute 4, which is currently in its beta phase, allows you to:
   - MySQL/PostgreSQL Integration
   - And Many More :)
   
-Developers are actively using flute 4 in production environments and saving hours of Development Time. To get access to flute 4, please [reach out to us](mailto:chetan@tomdinh.com?subject=Access%20flute%204&body=I%20want%20to%20use%20flute%204%20and%20gain%20access%20to%20feature%3A%20%5BTELL%20YOUR%20FEATURE%5D) and let us know which feature you would like to access.
+Developers are actively using flute 4 in production environments and saving hours of Development Time. To get access to flute 4, please [reach out to us](mailto:cryptodinh@gmail.com?subject=Access%20flute%204&body=I%20want%20to%20use%20flute%204%20and%20gain%20access%20to%20feature%3A%20%5BTELL%20YOUR%20FEATURE%5D) and let us know which feature you would like to access.
  
 
 
@@ -1369,6 +1369,6 @@ It's just one click, but it means the world to me.
 
 > By using flute, you agree to comply with all applicable local and international laws related to data scraping, copyright, and privacy. The developers of flute are not responsible for any misuse of this software. It is the sole responsibility of the user to ensure adherence to all relevant laws regarding data scraping, copyright, and privacy, and to use flute in an ethical and legal manner.
 
-We take the concerns of the flute Project very seriously. For any inquiries or issues, please contact Chetan Jain at [chetan@tomdinh.com](mailto:chetan@tomdinh.com). We will take prompt and necessary action in response to your emails.
+We take the concerns of the flute Project very seriously. For any inquiries or issues, please contact CD at [cryptodinh@gmail.com](mailto:cryptodinh@gmail.com). We will take prompt and necessary action in response to your emails.
 
 ## Made with ❤️ in Bharat 🇮🇳 - Vande Mataram

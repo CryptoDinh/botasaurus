@@ -40,10 +40,10 @@ setup(
     description="The All in One Web Scraping Framework",
     long_description_content_type="text/markdown",
     long_description=get_description(),
-    author="Chetan Jain",
-    author_email="chetan@tomdinh.com",
-    maintainer="Chetan Jain",
-    maintainer_email="chetan@tomdinh.com",
+    author="CD",
+    author_email="cryptodinh@gmail.com",
+    maintainer="CD",
+    maintainer_email="cryptodinh@gmail.com",
     keywords=[
         "crawler",
         "framework",
