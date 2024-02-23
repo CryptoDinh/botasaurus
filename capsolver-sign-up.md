@@ -2,7 +2,7 @@
 
 To simplify the captcha-solving process using CapSolver and save both time and effort, please follow these steps:
 
-1. Start by creating a CapSolver account. Visit [capsolver.com](https://dashboard.capsolver.com/passport/register?inviteCode=lvdYBC4sYKRm) to sign up.
+1. Start by creating a CapSolver account. Visit [capsolver.com](https://dashboard.capsolver.com/passport/register?inviteCode=XE68oraJ9nMM) to sign up.
 
    ![Sign Up](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/sign_up_capsolver.png)
 
