@@ -103,7 +103,7 @@ AntiDetectDriver is a modified version of Selenium designed to evade detection b
 
 - `.google_get` simulates a search engine referral, opening the Google homepage before navigating to the target URL.
   ```python
-  driver.google_get("https://www.omkar.cloud/auth/sign-up/")
+  driver.google_get("https://www.tomdinh.com/auth/sign-up/")
   ```
 
 **Referral-Based Navigation**

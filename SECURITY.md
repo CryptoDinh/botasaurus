@@ -8,7 +8,7 @@ By using flute, you agree to comply with all applicable local and international 
 
 We take the privacy and security of the flute Project very seriously. If you have discovered a security vulnerability or have concerns about the project, we appreciate your assistance in responsibly disclosing it to us.
 
-To report a security issue or express a concern, please email Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly respond to your concerns.
+To report a security issue or express a concern, please email Chetan Jain at [chetan@tomdinh.com](mailto:chetan@tomdinh.com). We will promptly respond to your concerns.
 
 ## 2. Use at Your Own Risk
 
@@ -16,6 +16,6 @@ This project is provided for ethical and legal purposes only. It must be used in
 
 ## 3. Contact
 
-For questions regarding this security policy or the security of the flute Project, please contact [chetan@omkar.cloud](mailto:chetan@omkar.cloud).
+For questions regarding this security policy or the security of the flute Project, please contact [chetan@tomdinh.com](mailto:chetan@tomdinh.com).
 
 The information in this `SECURITY.md` is provided "as is," without any kind of warranty.

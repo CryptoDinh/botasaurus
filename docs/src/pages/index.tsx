@@ -21,7 +21,7 @@ function HomepageHeader() {
             What is flute 🤔?
           </Link>
           <iframe
-            src="https://ghbtns.com/github-btn.html?user=omkarcloud&repo=flute&type=star&count=true&size=large"
+            src="https://ghbtns.com/github-btn.html?user=cryptodinh&repo=flute&type=star&count=true&size=large"
             frameBorder={0}
             scrolling={'0'}
             width={170}

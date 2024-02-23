@@ -13,7 +13,7 @@ import platform as pf
 from packaging import version
 from .utils import  is_windows
 
-__author__ = "Chetan Jain <chetan@omkar.cloud>"
+__author__ = "CryptoDinh<cd@tomdinh.com>"
 
 from typing import AnyStr, Optional
 

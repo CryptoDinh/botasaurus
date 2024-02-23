@@ -11,7 +11,7 @@ There are two most important reasons to change your IP:
 **1. Preventing Suspension:** 
 Imagine you create 100 accounts on LinkedIn using the same IP. Soon enough, LinkedIn will ask you for identity verification.
 
-![LinkedIn Restricted Account](https://raw.githubusercontent.com/omkarcloud/flute/master/images/linkedin-restricted.png)
+![LinkedIn Restricted Account](https://raw.githubusercontent.com/cryptodinh/flute/master/images/linkedin-restricted.png)
 
 LinkedIn restricts the account because it recognizes that 100 accounts were created using a single IP, indicating possible bot activity.
 
@@ -22,7 +22,7 @@ Remember, the golden rule to prevent suspension is **"No two bots should have th
 **2. Bypassing IP Blocks:** 
 If you try to scrape fiverr.com, after a few page scrapes, you might encounter the following PerimeterX screen.
 
-![Fiverr IP Block](https://raw.githubusercontent.com/omkarcloud/flute/master/images/fiverr-block.webp)
+![Fiverr IP Block](https://raw.githubusercontent.com/cryptodinh/flute/master/images/fiverr-block.webp)
 
 In cases like these, when you get blocked, you need to change your IP to continue scraping.
 

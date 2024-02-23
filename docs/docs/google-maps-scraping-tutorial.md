@@ -59,7 +59,7 @@ Here's the quick setup process:
 Clone the flute Starter Template:
 
 ```bash
-git clone https://github.com/omkarcloud/flute-starter my-flute-project
+git clone https://github.com/cryptodinh/flute-starter my-flute-project
 ```
 
 **2. Navigate and Prepare**:
@@ -431,7 +431,7 @@ It's important to note that you need to rebuild the Docker image every time you 
 
 :::info Prerequisites
 
-We've developed an advanced, production-ready version of the scraper that's **4x** faster and handles many edge cases. For simplicity, these cases weren't covered in this tutorial. We recommend using this enhanced version over the one built in the tutorial. You can access it [here](https://github.com/omkarcloud/google-maps-scraper/).
+We've developed an advanced, production-ready version of the scraper that's **4x** faster and handles many edge cases. For simplicity, these cases weren't covered in this tutorial. We recommend using this enhanced version over the one built in the tutorial. You can access it [here](https://github.com/cryptodinh/google-maps-scraper/).
 
 :::
 

@@ -17,7 +17,7 @@ This section will guide you through the steps to create a new flute project usin
 Clone Starter Template
 
 ```bash
-git clone https://github.com/omkarcloud/flute-starter my-flute-project
+git clone https://github.com/cryptodinh/flute-starter my-flute-project
 ```
 
 Then change into `my-flute-project` directory, install dependencies, open vscode, and start the project:

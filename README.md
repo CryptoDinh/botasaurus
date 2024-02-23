@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/omkarcloud/flute/master/images/mascot.png" alt="flute" />
+  <img src="https://raw.githubusercontent.com/cryptodinh/flute/master/images/mascot.png" alt="flute" />
 </p>
   <div align="center" style="margin-top: 0;">
   <h1>🤖 flute 🤖</h1>
@@ -15,12 +15,12 @@
 
 
 <p align="center">
-  <img src="https://views.whatilearened.today/views/github/omkarcloud/flute.svg" width="80px" height="28px" alt="View" />
+  <img src="https://views.whatilearened.today/views/github/cryptodinh/flute.svg" width="80px" height="28px" alt="View" />
 </p>
 
 
 <p align="center">
-  <a href="https://gitpod.io/#https://github.com/omkarcloud/flute-starter">
+  <a href="https://gitpod.io/#https://github.com/cryptodinh/flute-starter">
     <img alt="Run in Gitpod" src="https://gitpod.io/button/open-in-gitpod.svg" />
   </a>
 </p>
@@ -37,11 +37,11 @@ Our mission is to make creating awesome scrapers easy for everyone.
 
 flute is built for creating awesome scrapers. It comes fully baked, with batteries included. Here is a list of things it can do that no other web scraping framework can:
 
-- **Most Stealthiest Framework LITERALLY**: Based on the benchmarks, which we encourage you to read [here](https://github.com/omkarcloud/flute-vs-undetected-chromedriver-vs-puppeteer-stealth-benchmarks), our framework stands as the most stealthy in both the JS and Python universes. It is more stealthy than the popular Python library `undetected-chromedriver` and the well-known JavaScript library `puppeteer-stealth`. flute can easily visit websites like `https://nowsecure.nl/`. With flute, you don't need to waste time finding ways to unblock a website. For usage, [see this FAQ.](https://github.com/omkarcloud/flute/tree/master#can-you-bypass-cloudflareimperva-challenges)
-- **Access Cloudflare Websites with Simple HTTP Requests:** We can access Cloudflare-protected pages using simple HTTP requests. Saving you both time and money spent on proxies. For usage, [see this FAQ.](https://github.com/omkarcloud/flute/tree/master#how-to-scrape-cloudflare-protected-websites-with-simple-http-requests)
+- **Most Stealthiest Framework LITERALLY**: Based on the benchmarks, which we encourage you to read [here](https://github.com/cryptodinh/flute-vs-undetected-chromedriver-vs-puppeteer-stealth-benchmarks), our framework stands as the most stealthy in both the JS and Python universes. It is more stealthy than the popular Python library `undetected-chromedriver` and the well-known JavaScript library `puppeteer-stealth`. flute can easily visit websites like `https://nowsecure.nl/`. With flute, you don't need to waste time finding ways to unblock a website. For usage, [see this FAQ.](https://github.com/cryptodinh/flute/tree/master#can-you-bypass-cloudflareimperva-challenges)
+- **Access Cloudflare Websites with Simple HTTP Requests:** We can access Cloudflare-protected pages using simple HTTP requests. Saving you both time and money spent on proxies. For usage, [see this FAQ.](https://github.com/cryptodinh/flute/tree/master#how-to-scrape-cloudflare-protected-websites-with-simple-http-requests)
 - **SSL Support for Authenticated Proxy:** We are the first and only Python Web Scraping Framework as of writing to offer SSL support for authenticated proxies. No other browser automation libraries be it seleniumwire, puppeteer, playwright offers this important web scraping feature, this feautre enables you to easily access Cloudflare protected websites when using authenticated proxies, which would otherwise be blocked if you used only the bare authenticated proxy.
-- **Use Any Chrome Extension with Just 1 Line of Code:** Easily integrate any Chrome extension, be it a Captcha Solving Extension, Adblocker, or any other from the Chrome Web Store, with just [one line of code.](https://github.com/omkarcloud/flute#how-to-use-chrome-extensions). Say Sayonara, to the manual process of downloading, unzipping, configuring, and loading extensions. 
-- **Sitemap Support:** With just [one line of code](https://github.com/omkarcloud/flute#how-to-extract-links-from-a-sitemap), you can get all links for a website.
+- **Use Any Chrome Extension with Just 1 Line of Code:** Easily integrate any Chrome extension, be it a Captcha Solving Extension, Adblocker, or any other from the Chrome Web Store, with just [one line of code.](https://github.com/cryptodinh/flute#how-to-use-chrome-extensions). Say Sayonara, to the manual process of downloading, unzipping, configuring, and loading extensions. 
+- **Sitemap Support:** With just [one line of code](https://github.com/cryptodinh/flute#how-to-extract-links-from-a-sitemap), you can get all links for a website.
 - **Data Cleaners:** Make your scrapers robust by cleaning data with expert created data cleaners.
 - **Debuggability:** When a crash occurs due to an incorrect selector, etc., flute pauses the browser instead of closing it, facilitating painless on-the-spot debugging.
 - **Caching:** flute allows you to cache web scraping results, ensuring lightning-fast performance on subsequent scrapes.
@@ -53,9 +53,9 @@ flute is built for creating awesome scrapers. It comes fully baked, with batteri
 
 Welcome to flute! Let’s dive right in with a straightforward example to understand how it works.
 
-In this tutorial, we will go through the steps to scrape the heading text from [https://www.omkar.cloud/](https://www.omkar.cloud/).
+In this tutorial, we will go through the steps to scrape the heading text from [https://www.tomdinh.com/](https://www.tomdinh.com/).
 
-![flute in action](https://raw.githubusercontent.com/omkarcloud/flute/master/images/starter-bot-running.gif)
+![flute in action](https://raw.githubusercontent.com/cryptodinh/flute/master/images/starter-bot-running.gif)
 
 ### Step 1: Install flute
 
@@ -87,7 +87,7 @@ from flute import *
 @browser
 def scrape_heading_task(driver: AntiDetectDriver, data):
     # Navigate to the Omkar Cloud website
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     
     # Retrieve the heading element's text
     heading = driver.text("h1")
@@ -120,7 +120,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
     - Extract the heading text
     - Return the data to be automatically saved as `scrape_heading_task.json` by flute:
 ```python
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     heading = driver.text("h1")
     return {"heading": heading}
 ```  
@@ -141,11 +141,11 @@ python main.py
 
 After executing the script, it will:
 - Launch Google Chrome
-- Navigate to [omkar.cloud](https://www.omkar.cloud/)
+- Navigate to [tomdinh.com](https://www.tomdinh.com/)
 - Extract the heading text
 - Save it automatically as `output/scrape_heading_task.json`.
 
-![flute in action](https://raw.githubusercontent.com/omkarcloud/flute/master/images/starter-bot-running.gif)
+![flute in action](https://raw.githubusercontent.com/cryptodinh/flute/master/images/starter-bot-running.gif)
 
 Now, let’s explore another way to scrape the heading using the `request` module. Replace the previous code in `main.py` with the following:
 
@@ -155,7 +155,7 @@ from flute import *
 @request
 def scrape_heading_task(request: AntiDetectRequests, data):
     # Navigate to the Omkar Cloud website
-    soup = request.bs4("https://www.omkar.cloud/")
+    soup = request.bs4("https://www.tomdinh.com/")
     
     # Retrieve the heading element's text
     heading = soup.find('h1').get_text()
@@ -185,7 +185,7 @@ python main.py
 
 This time, you will observe the same result as before, but instead of using Anti Detect Selenium, we are utilizing the Anti Detect request module.
 
-*Note: If you don't have Python installed, then you can run flute in Gitpod, a browser-based development environment, by following [this section](https://github.com/omkarcloud/flute#how-to-run-flute-in-gitpod).*
+*Note: If you don't have Python installed, then you can run flute in Gitpod, a browser-based development environment, by following [this section](https://github.com/cryptodinh/flute#how-to-run-flute-in-gitpod).*
 
 ## 💡 Understanding flute
 
@@ -210,21 +210,21 @@ scrape_heading_task()
 
 After running this script, you'll notice that the G2 page opens successfully, and the code prints the page's heading.
 
-![not blocked](https://raw.githubusercontent.com/omkarcloud/flute/master/images/botasurussuccesspage.png)
+![not blocked](https://raw.githubusercontent.com/cryptodinh/flute/master/images/botasurussuccesspage.png)
 
 ### How to Scrape Multiple Data Points/Links?
 
 To scrape multiple data points or links, define the `data` variable and provide a list of items to be scraped:
 
 ```python
-@browser(data=["https://www.omkar.cloud/", "https://www.omkar.cloud/blog/", "https://stackoverflow.com/"])
+@browser(data=["https://www.tomdinh.com/", "https://www.tomdinh.com/blog/", "https://stackoverflow.com/"])
 def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...
 ```
 
 flute will launch a new browser instance for each item in the list and merge and store the results in `scrape_heading_task.json` at the end of the scraping.
 
-![scraped data](https://raw.githubusercontent.com/omkarcloud/flute/master/images/scraped-data.png)
+![scraped data](https://raw.githubusercontent.com/cryptodinh/flute/master/images/scraped-data.png)
 
 Please note that the `data` parameter can also handle items such as dictionaries.
 
@@ -243,7 +243,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data: dict):
 To scrape data in parallel, set the `parallel` option in the browser decorator:
 
 ```python
-@browser(parallel=3, data=["https://www.omkar.cloud/", ...])
+@browser(parallel=3, data=["https://www.tomdinh.com/", ...])
 def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...
 ```
@@ -253,7 +253,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
 To determine the optimal number of parallel scrapers, pass the `bt.calc_max_parallel_browsers` function, which calculates the maximum number of browsers that can be run in parallel based on the available RAM:
 
 ```python
-@browser(parallel=bt.calc_max_parallel_browsers, data=["https://www.omkar.cloud/", ...])
+@browser(parallel=bt.calc_max_parallel_browsers, data=["https://www.tomdinh.com/", ...])
 def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...
 ```
@@ -265,7 +265,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
 To cache web scraping results and avoid re-scraping the same data, set `cache=True` in the decorator:
 
 ```python
-@browser(cache=True, data=["https://www.omkar.cloud/", ...])
+@browser(cache=True, data=["https://www.tomdinh.com/", ...])
 def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...  
 ```
@@ -277,7 +277,7 @@ flute enhances the debugging experience by pausing the browser instead of closin
 
 flute also plays a beep sound to alert you when an error occurs.
 
-![](https://raw.githubusercontent.com/omkarcloud/flute/master/images/error-prompt.png)
+![](https://raw.githubusercontent.com/cryptodinh/flute/master/images/error-prompt.png)
 
 ### How to Block Resources like CSS, Images, and Fonts to Save Bandwidth?
 
@@ -290,7 +290,7 @@ To block images, simply use the `block_resources` parameter. For example:
 ```python
 @browser(block_resources=True) # Blocks ['.css', '.jpg', '.jpeg', '.png', '.svg', '.gif', '.woff', '.pdf', '.zip']
 def scrape_heading_task(driver: AntiDetectDriver, data):
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     driver.prompt()
     
 scrape_heading_task()    
@@ -301,7 +301,7 @@ If you wish to block only images and fonts, while allowing CSS files, you can se
 ```python
 @browser(block_images=True) # Blocks ['.jpg', '.jpeg', '.png', '.svg', '.gif', '.woff', '.pdf', '.zip']
 def scrape_heading_task(driver: AntiDetectDriver, data):
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     driver.prompt()
 
 scrape_heading_task()        
@@ -312,7 +312,7 @@ To block a specific set of resources, such as only JavaScript, CSS, fonts, etc.,
 ```python
 @browser(block_resources=['.js', '.css', '.jpg', '.jpeg', '.png', '.svg', '.gif', '.woff', '.pdf', '.zip'])
 def scrape_heading_task(driver: AntiDetectDriver, data):
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     driver.prompt()
 
 scrape_heading_task()        
@@ -332,7 +332,7 @@ from flute import *
   user_agent=bt.UserAgent.user_agent_106
 )
 def scrape_heading_task(driver: AntiDetectDriver, data):
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     driver.prompt()
 
 scrape_heading_task()
@@ -346,7 +346,7 @@ You can also pass additional parameters when calling the scraping function, as d
 def scrape_heading_task(driver: AntiDetectDriver, data):
     # ...
 
-data = "https://www.omkar.cloud/"
+data = "https://www.tomdinh.com/"
 scrape_heading_task(
   data, 
   headless=True, 
@@ -363,7 +363,7 @@ Furthermore, it's possible to define functions that dynamically set these parame
 def scrape_heading_task(driver: AntiDetectDriver, data):
     # ...
 
-data = {"link": "https://www.omkar.cloud/", "profile": "my-profile"}
+data = {"link": "https://www.tomdinh.com/", "profile": "my-profile"}
 scrape_heading_task(data)
 ```
 
@@ -375,7 +375,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data, metadata):
     print("metadata:", metadata)
     print("data:", data)
 
-data = {"link": "https://www.omkar.cloud/", "profile": "my-profile"}
+data = {"link": "https://www.tomdinh.com/", "profile": "my-profile"}
 scrape_heading_task(
   data, 
   metadata={"api_key": "BDEC26..."}
@@ -391,7 +391,7 @@ To save the data with a different filename, pass the desired filename along with
 @browser(block_resources=True, cache=True)
 def scrape_article_links(driver: AntiDetectDriver, data):
     # Visit the Omkar Cloud website
-    driver.get("https://www.omkar.cloud/blog/")
+    driver.get("https://www.tomdinh.com/blog/")
     
     links = driver.links("h3 a")
 
@@ -447,7 +447,7 @@ driver.quit()
 
 You will definitely encounter a block by Cloudflare:
 
-![blocked](https://raw.githubusercontent.com/omkarcloud/flute/master/images/seleniumwireblocked.png)
+![blocked](https://raw.githubusercontent.com/cryptodinh/flute/master/images/seleniumwireblocked.png)
 
 However, using proxies with flute prevents this issue. See the difference by running the following code:
 ```python
@@ -461,7 +461,7 @@ scrape_heading_task()
 ```  
 
 Result: 
-![not blocked](https://raw.githubusercontent.com/omkarcloud/flute/master/images/botasurussuccesspage.png)
+![not blocked](https://raw.githubusercontent.com/cryptodinh/flute/master/images/botasurussuccesspage.png)
 
 NOTE: To run the code above, you will need Node.js installed.
 
@@ -729,7 +729,7 @@ def solve_captcha(driver: AntiDetectDriver, data):
 solve_captcha()
 ```
 
-To solve captcha's with CapSolver, you will need Capsolver API Key. If you do not have a CapSolver API Key, follow the instructions [here](https://github.com/omkarcloud/flute/blob/master/capsolver-sign-up.md) to create a CapSolver account and obtain one.
+To solve captcha's with CapSolver, you will need Capsolver API Key. If you do not have a CapSolver API Key, follow the instructions [here](https://github.com/cryptodinh/flute/blob/master/capsolver-sign-up.md) to create a CapSolver account and obtain one.
 
 ### How to Use Chrome Extensions?
 
@@ -748,7 +748,7 @@ def open_chrome(driver: AntiDetectDriver, data):
 open_chrome()
 ```
 
-Also, In some cases an extension requires additional configuration like API keys or credentials, for that you can create a Custom Extension. Learn how to create and configure Custom Extension [here](https://github.com/omkarcloud/chrome-extension-python).
+Also, In some cases an extension requires additional configuration like API keys or credentials, for that you can create a Custom Extension. Learn how to create and configure Custom Extension [here](https://github.com/cryptodinh/chrome-extension-python).
 
 
 ### I want to Scrape a large number of Links, a new selenium driver is getting created for each new link, this increases the time to scrape data. How can I reuse Drivers?
@@ -768,8 +768,8 @@ In web scraping, it is a common use case to scrape product pages, blogs, etc. Bu
 Many developers unnecessarily increase their work by writing code to visit each page one by one and scrape links, which they could have easily by just looking at the Sitemap.
 
 The flute Sitemap Module makes this process easy as cake by allowing you to get all links or sitemaps using:
-- The homepage URL (e.g., `https://www.omkar.cloud/`)
-- A direct sitemap link (e.g., `https://www.omkar.cloud/sitemap.xml`)
+- The homepage URL (e.g., `https://www.tomdinh.com/`)
+- A direct sitemap link (e.g., `https://www.tomdinh.com/sitemap.xml`)
 - A `.gz` compressed sitemap (e.g., `https://www.g2.com/sitemaps/sitemap_index.xml.gz`)
 
 For example, if you're an Angel Investor seeking innovative tech startups, G2 is an ideal platform where companies showcase their products. You can run the following code to fetch over 160K+ product links from G2:
@@ -789,7 +789,7 @@ bt.write_temp_json(links)
 
 **Output:** 
 
-![g2-sitemap-links.png](https://raw.githubusercontent.com/omkarcloud/flute/master/images/g2-sitemap-links.png)
+![g2-sitemap-links.png](https://raw.githubusercontent.com/cryptodinh/flute/master/images/g2-sitemap-links.png)
 
 
 Or, if you're in the mood for some reading and looking for good stories, the following code will get you over 1000+ stories from [moralstories26.com](https://moralstories26.com/):
@@ -814,7 +814,7 @@ bt.write_temp_json(sitemaps)
 
 **Output:** 
 
-![moralstories26-sitemap-links.png](https://raw.githubusercontent.com/omkarcloud/flute/master/images/moralstories26-sitemap-links.png)
+![moralstories26-sitemap-links.png](https://raw.githubusercontent.com/cryptodinh/flute/master/images/moralstories26-sitemap-links.png)
 
 Before scraping a site, it's useful to identify the available sitemaps. This can be easily done with the following code:
 
@@ -822,13 +822,13 @@ Before scraping a site, it's useful to identify the available sitemaps. This can
 from flute import *
 from flute.sitemap import Sitemap
 
-sitemaps = Sitemap("https://www.omkar.cloud/").sitemaps()
+sitemaps = Sitemap("https://www.tomdinh.com/").sitemaps()
 bt.write_temp_json(sitemaps)
 ```
 
 **Output:** 
 
-![omkar-sitemap-links.png](https://raw.githubusercontent.com/omkarcloud/flute/master/images/omkar-sitemap-links.png)
+![omkar-sitemap-links.png](https://raw.githubusercontent.com/cryptodinh/flute/master/images/omkar-sitemap-links.png)
 
 To ensure your scrapers run super fast, we cache the Sitemap, but you may want to periodically refresh the cache, which you can do as follows:
 
@@ -877,7 +877,7 @@ def scrape_articles(driver: AntiDetectDriver, link):
 @browser(block_resources=True, cache=True)
 def scrape_article_links(driver: AntiDetectDriver, data):
     # Visit the Omkar Cloud website
-    driver.get("https://www.omkar.cloud/blog/")
+    driver.get("https://www.tomdinh.com/blog/")
     
     links = driver.links("h3 a")
 
@@ -981,7 +981,7 @@ flute provides a module named `cl` that includes commonly used cleaning function
    ```python
    from flute import cl
 
-   print(cl.extract_links("I can extract links like https://www.omkar.cloud/ or https://www.omkar.cloud/blog/"))  # ['https://www.omkar.cloud/', 'https://www.omkar.cloud/blog/']
+   print(cl.extract_links("I can extract links like https://www.tomdinh.com/ or https://www.tomdinh.com/blog/"))  # ['https://www.tomdinh.com/', 'https://www.tomdinh.com/blog/']
    print(cl.rename_keys({"name": "Omkar", "age": 21}, {"name": "full_name"}))  # {"full_name": "Omkar", "age": 21}
    print(cl.sort_object_by_keys({"age": 21, "name": "Omkar"}, "name"))  # {"name": "Omkar", "age": 21}
    print(cl.extract_from_dict([{"name": "John", "age": 21}, {"name": "Jane", "age": 21}, {"name": "Bob", "age": 21}], "name"))  # ["John", "Jane", "Bob"]
@@ -1026,7 +1026,7 @@ AntiDetectDriver is a patched Version of Selenium that has been modified to avoi
 
 It also includes a variety of helper functions that make web scraping tasks easier.
 
-You can learn about these methods [here](https://github.com/omkarcloud/flute/blob/master/anti-detect-driver.md).
+You can learn about these methods [here](https://github.com/cryptodinh/flute/blob/master/anti-detect-driver.md).
 
 ### What Features Does @request Support, Similar to @browser?
 
@@ -1041,7 +1041,7 @@ Below is an example that showcases these features:
 
 
 ```python
-@request(parallel=40, cache=True, proxy="http://your_proxy_address:your_proxy_port", data=["https://www.omkar.cloud/", ...])
+@request(parallel=40, cache=True, proxy="http://your_proxy_address:your_proxy_port", data=["https://www.tomdinh.com/", ...])
 def scrape_heading_task(request: AntiDetectDriver, link):
   soup = request.bs4(link)
   heading = soup.find('h1').get_text()
@@ -1060,7 +1060,7 @@ driver.quit()
 You can create an instance of `AntiDetectRequests` as follows:
 ```python
 anti_detect_request = bt.create_request()
-soup = anti_detect_request.bs4("https://www.omkar.cloud/")
+soup = anti_detect_request.bs4("https://www.tomdinh.com/")
 # ... Additional code
 ```
 
@@ -1070,7 +1070,7 @@ soup = anti_detect_request.bs4("https://www.omkar.cloud/")
 
 Sometimes, data is hidden behind an authentication wall, requiring you to sign up via email or Google to access it. Sign-up automation is designed for this use case; it assists in downloading reports, scraping account usage history, and more.
 
-Please note that it is important to use this functionality ethically and only for legitimate purposes. You can learn about it [here](https://www.omkar.cloud/flute/docs/sign-up-features/)
+Please note that it is important to use this functionality ethically and only for legitimate purposes. You can learn about it [here](https://www.tomdinh.com/flute/docs/sign-up-features/)
 
 ---
 
@@ -1079,7 +1079,7 @@ Please note that it is important to use this functionality ethically and only fo
 To run flute in Docker, use the flute Starter Template, which includes the necessary Dockerfile and Docker Compose configurations:
 
 ```
-git clone https://github.com/omkarcloud/flute-starter my-flute-project
+git clone https://github.com/cryptodinh/flute-starter my-flute-project
 cd my-flute-project
 docker-compose build && docker-compose up
 ```
@@ -1088,13 +1088,13 @@ docker-compose build && docker-compose up
 
 flute Starter Template comes with the necessary `.gitpod.yml` to easily run it in Gitpod, a browser-based development environment. Set it up in just 5 minutes by following these steps:
 
-1. Open flute Starter Template, by visiting [this link](https://gitpod.io/#https://github.com/omkarcloud/flute-starter) and sign up using your GitHub account.
+1. Open flute Starter Template, by visiting [this link](https://gitpod.io/#https://github.com/cryptodinh/flute-starter) and sign up using your GitHub account.
    
-   ![Screenshot (148)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4.png)
+   ![Screenshot (148)](https://github.com/cryptodinh/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4.png)
   
 <!-- 2. To speed up scraping, select the Large 8 Core, 16 GB Ram Machine and click the `Continue` button.   
 
-   ![16gb select](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/16gb-select.png) -->
+   ![16gb select](https://raw.githubusercontent.com/cryptodinh/google-maps-scraper/master/screenshots/16gb-select.png) -->
 
 2. In the terminal, run the following command to start scraping:
 ```bash
@@ -1307,7 +1307,7 @@ from flute.create_stealth_driver import create_stealth_driver
 
 While developing a scraper, you might need to interrupt the scraping process, often done by pressing `Ctrl + C`. However, this action does not automatically close the Chrome browsers, which can cause your computer to hang due to resource overuse.
 
-![Many Chrome processes running in Task Manager](https://raw.githubusercontent.com/omkarcloud/flute/master/images/chrome-running.png)
+![Many Chrome processes running in Task Manager](https://raw.githubusercontent.com/cryptodinh/flute/master/images/chrome-running.png)
 
 To prevent your PC from hanging, you need to close all running Chrome instances. 
 
@@ -1333,7 +1333,7 @@ flute 4, which is currently in its beta phase, allows you to:
   - MySQL/PostgreSQL Integration
   - And Many More :)
   
-Developers are actively using flute 4 in production environments and saving hours of Development Time. To get access to flute 4, please [reach out to us](mailto:chetan@omkar.cloud?subject=Access%20flute%204&body=I%20want%20to%20use%20flute%204%20and%20gain%20access%20to%20feature%3A%20%5BTELL%20YOUR%20FEATURE%5D) and let us know which feature you would like to access.
+Developers are actively using flute 4 in production environments and saving hours of Development Time. To get access to flute 4, please [reach out to us](mailto:chetan@tomdinh.com?subject=Access%20flute%204&body=I%20want%20to%20use%20flute%204%20and%20gain%20access%20to%20feature%3A%20%5BTELL%20YOUR%20FEATURE%5D) and let us know which feature you would like to access.
  
 
 
@@ -1347,7 +1347,7 @@ Its various settings allow you to tailor the scraping process to your specific n
 
 For further help, ask your question in GitHub Discussions. We'll be happy to help you out.
 
-[![ask github](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-on-github.png)](https://github.com/omkarcloud/flute/discussions)
+[![ask github](https://raw.githubusercontent.com/cryptodinh/google-maps-scraper/master/screenshots/ask-on-github.png)](https://github.com/cryptodinh/flute/discussions)
 
 ## Thanks
 
@@ -1357,18 +1357,18 @@ For further help, ask your question in GitHub Discussions. We'll be happy to hel
 - Thanks to Cloudflare, DataDome, Imperva, and all bot detectors. Had you not been there, we wouldn't be either 😅.
 - Finally, a humongous thank you for choosing flute.
 
-## Love It? [Star It! ⭐](https://github.com/omkarcloud/flute)
+## Love It? [Star It! ⭐](https://github.com/cryptodinh/flute)
 
 Become one of our amazing stargazers by giving us a star ⭐ on GitHub!
 
 It's just one click, but it means the world to me.
 
-[![Stargazers for @omkarcloud/flute](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=flute)](https://github.com/omkarcloud/flute/stargazers)
+[![Stargazers for @cryptodinh/flute](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=cryptodinh&repo=flute)](https://github.com/cryptodinh/flute/stargazers)
 
 ## Disclaimer for flute Project
 
 > By using flute, you agree to comply with all applicable local and international laws related to data scraping, copyright, and privacy. The developers of flute are not responsible for any misuse of this software. It is the sole responsibility of the user to ensure adherence to all relevant laws regarding data scraping, copyright, and privacy, and to use flute in an ethical and legal manner.
 
-We take the concerns of the flute Project very seriously. For any inquiries or issues, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will take prompt and necessary action in response to your emails.
+We take the concerns of the flute Project very seriously. For any inquiries or issues, please contact Chetan Jain at [chetan@tomdinh.com](mailto:chetan@tomdinh.com). We will take prompt and necessary action in response to your emails.
 
 ## Made with ❤️ in Bharat 🇮🇳 - Vande Mataram

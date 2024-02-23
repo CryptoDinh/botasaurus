@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 const config = {
   title: "🤖 flute Framework 🤖",
   tagline: "flute is a Swiss Army knife 🔪 for web scraping and browser automation 🤖 that helps you create bots fast. ⚡️",
-  url: "https://www.omkar.cloud",
+  url: "https://www.tomdinh.com",
   trailingSlash: true,
 
   favicon: "img/favicon.ico",
@@ -25,7 +25,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "omkarcloud", // Usually your GitHub org/user name.
+  organizationName: "cryptodinh", // Usually your GitHub org/user name.
   projectName: "flute", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -49,7 +49,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/omkarcloud/flute/blob/master/docs",
+            "https://github.com/cryptodinh/flute/blob/master/docs",
         },
         blog: false,
         theme: {
@@ -73,7 +73,7 @@ const config = {
         title: "flute",
         logo: {
           alt: "flute Logo",
-          src: "https://raw.githubusercontent.com/omkarcloud/flute/master/images/mascot-logo.png",
+          src: "https://raw.githubusercontent.com/cryptodinh/flute/master/images/mascot-logo.png",
         },
         items: [
           {
@@ -84,7 +84,7 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: "https://github.com/omkarcloud/flute",
+            href: "https://github.com/cryptodinh/flute",
             label: "Love It? Star It! ★",
             position: "right",
           },
@@ -111,7 +111,7 @@ const config = {
               // },
               {
                 label: "GitHub Discuss",
-                href: "https://github.com/omkarcloud/flute/discussions",
+                href: "https://github.com/cryptodinh/flute/discussions",
               },
             ],
           },
@@ -124,12 +124,12 @@ const config = {
               // },
               {
                 label: "GitHub",
-                href: "https://github.com/omkarcloud/flute",
+                href: "https://github.com/cryptodinh/flute",
               },
             ],
           },
         ],
-        copyright: `Made in Bharat 🇮🇳 - Vande Mataram`,
+        copyright: `Made in Crypto Space`,
       },
       prism: {
         theme: lightCodeTheme,

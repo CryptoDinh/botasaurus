@@ -24,9 +24,9 @@ flute comes fully baked, with batteries included. Here is a list of things it ca
 
 Welcome to flute! Let’s dive right in with a straightforward example to understand how it works.
 
-In this tutorial, we will go through the steps to scrape the heading text from [https://www.omkar.cloud/](https://www.omkar.cloud/).
+In this tutorial, we will go through the steps to scrape the heading text from [https://www.tomdinh.com/](https://www.tomdinh.com/).
 
-![flute in action](https://raw.githubusercontent.com/omkarcloud/flute/master/images/starter-bot-running.gif)
+![flute in action](https://raw.githubusercontent.com/cryptodinh/flute/master/images/starter-bot-running.gif)
 
 ### Step 1: Install flute
 
@@ -58,7 +58,7 @@ from flute import *
 @browser
 def scrape_heading_task(driver: AntiDetectDriver, data):
     # Navigate to the Omkar Cloud website
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     
     # Retrieve the heading element's text
     heading = driver.text("h1")
@@ -91,7 +91,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
     - Extract the heading text
     - Prepare the data to be automatically saved as JSON and CSV files by flute:
 ```python
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     heading = driver.text("h1")
     return {"heading": heading}
 ```  
@@ -112,11 +112,11 @@ python main.py
 
 After executing the script, it will:
 - Launch Google Chrome
-- Navigate to [omkar.cloud](https://www.omkar.cloud/)
+- Navigate to [tomdinh.com](https://www.tomdinh.com/)
 - Extract the heading text
 - Save it automatically as `output/finished.json`.
 
-![flute in action](https://raw.githubusercontent.com/omkarcloud/flute/master/images/starter-bot-running.gif)
+![flute in action](https://raw.githubusercontent.com/cryptodinh/flute/master/images/starter-bot-running.gif)
 
 Now, let’s explore another way to scrape the heading using the `request` module. Replace the previous code in `main.py` with the following:
 
@@ -126,7 +126,7 @@ from flute import *
 @request
 def scrape_heading_task(request: AntiDetectRequests, data):
     # Navigate to the Omkar Cloud website
-    soup = request.bs4("https://www.omkar.cloud/")
+    soup = request.bs4("https://www.tomdinh.com/")
     
     # Retrieve the heading element's text
     heading = soup.find('h1').get_text()
@@ -165,14 +165,14 @@ Let's learn about the features of flute that assist you in web scraping and auto
 To scrape multiple data points or links, define the `data` variable and provide a list of items to be scraped:
 
 ```python
-@browser(data=["https://www.omkar.cloud/", "https://www.omkar.cloud/blog/", "https://stackoverflow.com/"])
+@browser(data=["https://www.tomdinh.com/", "https://www.tomdinh.com/blog/", "https://stackoverflow.com/"])
 def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...
 ```
 
 flute will launch a new browser instance for each item in the list and merge and store the results in `scrape_heading_task.json` at the end of the scraping.
 
-![scraped data](https://raw.githubusercontent.com/omkarcloud/flute/master/images/scraped-data.png)
+![scraped data](https://raw.githubusercontent.com/cryptodinh/flute/master/images/scraped-data.png)
 
 Please note that the `data` parameter can also handle items such as dictionaries.
 
@@ -191,7 +191,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data: dict):
 To scrape data in parallel, set the `parallel` option in the browser decorator:
 
 ```python
-@browser(parallel=3, data=["https://www.omkar.cloud/", ...])
+@browser(parallel=3, data=["https://www.tomdinh.com/", ...])
 def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...
 ```
@@ -201,7 +201,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
 To determine the optimal number of parallel scrapers, pass the `bt.calc_max_parallel_browsers` function, which calculates the maximum number of browsers that can be run in parallel based on the available RAM:
 
 ```python
-@browser(parallel=bt.calc_max_parallel_browsers, data=["https://www.omkar.cloud/", ...])
+@browser(parallel=bt.calc_max_parallel_browsers, data=["https://www.tomdinh.com/", ...])
 def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...
 ```
@@ -213,7 +213,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
 To cache web scraping results and avoid re-scraping the same data, set `cache=True` in the decorator:
 
 ```python
-@browser(cache=True, data=["https://www.omkar.cloud/", ...])
+@browser(cache=True, data=["https://www.tomdinh.com/", ...])
 def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...  
 ```
@@ -225,7 +225,7 @@ flute enhances the debugging experience by pausing the browser instead of closin
 
 flute also plays a beep sound to alert you when an error occurs.
 
-![](https://raw.githubusercontent.com/omkarcloud/flute/master/images/error-prompt.png)
+![](https://raw.githubusercontent.com/cryptodinh/flute/master/images/error-prompt.png)
 
 ### How to Block Images?
 
@@ -262,7 +262,7 @@ To save the data with a different filename, pass the desired filename along with
 @browser(block_images=True, cache=True)
 def scrape_article_links(driver: AntiDetectDriver, data):
     # Visit the Omkar Cloud website
-    driver.get("https://www.omkar.cloud/blog/")
+    driver.get("https://www.tomdinh.com/blog/")
     
     links = driver.links("h3 a")
 
@@ -304,7 +304,7 @@ def scrape_articles(driver: AntiDetectDriver, link):
 @browser(block_images=True, cache=True)
 def scrape_article_links(driver: AntiDetectDriver, data):
     # Visit the Omkar Cloud website
-    driver.get("https://www.omkar.cloud/blog/")
+    driver.get("https://www.tomdinh.com/blog/")
     
     links = driver.links("h3 a")
 
@@ -357,7 +357,7 @@ AntiDetectDriver is a patched Version of Selenium that has been modified to avoi
 
 It also includes a variety of helper functions that make web scraping tasks easier.
 
-You can learn about these methods [here](https://github.com/omkarcloud/flute/blob/master/anti-detect-driver.md).
+You can learn about these methods [here](https://github.com/cryptodinh/flute/blob/master/anti-detect-driver.md).
 
 ### What Features Does @request Support, Similar to @browser?
 
@@ -372,7 +372,7 @@ Below is an example that showcases these features:
 
 
 ```python
-@request(parallel=40, cache=True, proxy="http://your_proxy_address:your_proxy_port", data=["https://www.omkar.cloud/", ...])
+@request(parallel=40, cache=True, proxy="http://your_proxy_address:your_proxy_port", data=["https://www.tomdinh.com/", ...])
 def scrape_heading_task(request: AntiDetectDriver, link):
   soup = request.bs4(link)
   heading = soup.find('h1').get_text()
@@ -391,7 +391,7 @@ driver.quit()
 You can create an instance of `AntiDetectRequests` as follows:
 ```python
 anti_detect_request = bt.create_request()
-soup = anti_detect_request.bs4("https://www.omkar.cloud/")
+soup = anti_detect_request.bs4("https://www.tomdinh.com/")
 # ... Additional code
 ```
 
@@ -414,7 +414,7 @@ user = bt.generate_user(country=bt.Country.IN)
 
 This will generate user profiles similar to the one shown below:
 
-![Account](https://raw.githubusercontent.com/omkarcloud/flute/master/images/generated-account.png)
+![Account](https://raw.githubusercontent.com/cryptodinh/flute/master/images/generated-account.png)
 
 The data generated is very realistic, reducing the likelihood of being flagged as a bot.
 
@@ -487,7 +487,7 @@ user_agent, proxy, and other options can also be passed as functions.
 
 ### Is there a Tutorial that integrates tiny_profile, temp mail, user generator, profile to sign up on a Website and Perform Actions on Website. So I can get a Complete Picture?
 
-For a comprehensive guide on using flute features such as `tiny_profile`, `temp_mail`, `user_generator`, and `profile` to sign up on a website and perform actions, read the Sign-Up Tutorial [Here](https://www.omkar.cloud/flute/docs/sign-up-tutorial/). 
+For a comprehensive guide on using flute features such as `tiny_profile`, `temp_mail`, `user_generator`, and `profile` to sign up on a website and perform actions, read the Sign-Up Tutorial [Here](https://www.tomdinh.com/flute/docs/sign-up-tutorial/). 
 
 This tutorial will walk you through signing up for 3 accounts on Omkar Cloud and give you a complete understanding of the process.
 
@@ -496,7 +496,7 @@ This tutorial will walk you through signing up for 3 accounts on Omkar Cloud and
 To run flute in Docker, use the flute Starter Template, which includes the necessary Dockerfile and Docker Compose configurations:
 
 ```
-git clone https://github.com/omkarcloud/flute-starter my-flute-project
+git clone https://github.com/cryptodinh/flute-starter my-flute-project
 cd my-flute-project
 docker-compose build && docker-compose up
 ```
@@ -505,13 +505,13 @@ docker-compose build && docker-compose up
 
 flute Starter Template comes with the necessary `.gitpod.yml` to easily run it in Gitpod, a browser-based development environment. Set it up in just 5 minutes by following these steps:
 
-1. Open flute Starter Template, by visiting [this link](https://gitpod.io/#https://github.com/omkarcloud/flute-starter) and sign up using your GitHub account.
+1. Open flute Starter Template, by visiting [this link](https://gitpod.io/#https://github.com/cryptodinh/flute-starter) and sign up using your GitHub account.
    
-   ![Screenshot (148)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4.png)
+   ![Screenshot (148)](https://github.com/cryptodinh/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4.png)
   
 2. To speed up scraping, select the Large 8 Core, 16 GB Ram Machine and click the `Continue` button.   
 
-   ![16gb select](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/16gb-select.png)
+   ![16gb select](https://raw.githubusercontent.com/cryptodinh/google-maps-scraper/master/screenshots/16gb-select.png)
 
 3. In the terminal, run the following command to start scraping:
    ```bash
@@ -521,7 +521,7 @@ flute Starter Template comes with the necessary `.gitpod.yml` to easily run it i
 Please understand:
    - The internet speed in Gitpod is extremely fast at around 180 Mbps.
 
-      ![speedtest](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/speedtest.png)
+      ![speedtest](https://raw.githubusercontent.com/cryptodinh/google-maps-scraper/master/screenshots/speedtest.png)
 
    - When Scraping, You need to interact with Gitpod, such as clicking within the environment, every 30 minutes to prevent the machine from automatically closing.
 
@@ -708,7 +708,7 @@ Cache.clear(scrape_data)
 
 While developing a scraper, you might need to interrupt the scraping process, often done by pressing `Ctrl + C`. However, this action does not automatically close the Chrome browsers, which can cause your computer to hang due to resource overuse.
 
-![Many Chrome processes running in Task Manager](https://raw.githubusercontent.com/omkarcloud/flute/master/images/chrome-running.png)
+![Many Chrome processes running in Task Manager](https://raw.githubusercontent.com/cryptodinh/flute/master/images/chrome-running.png)
 
 To prevent your PC from hanging, you need to close all running Chrome instances. Here’s a simple method to do it using a Python shell:
 

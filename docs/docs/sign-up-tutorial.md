@@ -32,7 +32,7 @@ Let's get started :)
 
 Before we dive into creating a Sign Up Bot, let's quickly grasp how flute works with a simple example.
 
-In this simple example, we'll walk through the process of scraping the heading text from [https://www.omkar.cloud/](https://www.omkar.cloud/).
+In this simple example, we'll walk through the process of scraping the heading text from [https://www.tomdinh.com/](https://www.tomdinh.com/).
 
 ![](/img/starter-bot-running.gif)
 
@@ -67,7 +67,7 @@ class ScrapeHeadingTask(BaseTask):
 
     def run(self, driver: fluteDriver, data):
         # Visit the Omkar Cloud website
-        driver.get("https://www.omkar.cloud/")
+        driver.get("https://www.tomdinh.com/")
 
         # Get the heading element text
         heading = driver.text("h1")
@@ -99,7 +99,7 @@ class ScrapeHeadingTask(BaseTask):
     - Extract the heading text
     - Finally, return data to be saved as JSON and CSV files.
 ```python
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
 
     # Get the heading element text
     heading = driver.text("h1")
@@ -127,7 +127,7 @@ python main.py
 
 After running, the script will:
 - Launch Google Chrome
-- Visit [omkar.cloud](https://www.omkar.cloud/)
+- Visit [tomdinh.com](https://www.tomdinh.com/)
 - Extract the heading text
 - Automatically save it as `output/finished.json`.
 
@@ -161,7 +161,7 @@ This makes it appear to the website that the user has arrived from a Google Sear
 To achieve this organic navigation, we use the `google_get` method as follows:
 
 ```python 
-driver.google_get("https://www.omkar.cloud/auth/sign-up/")
+driver.google_get("https://www.tomdinh.com/auth/sign-up/")
 ```
 
 ![](/img/organic-get.gif)
@@ -200,7 +200,7 @@ Names like `XAEA-12 Musk` are likely to be flagged as bots and suspended by targ
 
 Instead of relying on purely random generation, we could use the Account Generator Module, which provides human-like data.
 
-![Account](https://raw.githubusercontent.com/omkarcloud/flute/master/images/generated-account.png)
+![Account](https://raw.githubusercontent.com/cryptodinh/flute/master/images/generated-account.png)
 
 Accounts produced by the Account Generator Module are so humane that it's nearly impossible to detect whether the account belongs to a human or a bot.
 
@@ -268,7 +268,7 @@ driver.prompt()
 
 ## ✅ Verify Email
 
-A standard practice during the registration process on many websites, including omkar.cloud, is to send an email verification link to confirm the email's validity.
+A standard practice during the registration process on many websites, including tomdinh.com, is to send an email verification link to confirm the email's validity.
 
 ![](/img/signup-email.png)
 
@@ -430,7 +430,7 @@ from flute import *
 )
 def take_screenshots(driver: AntiDetectDriver, account):
     username = account['username']
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     driver.save_screenshot(username)
 
 if __name__ == "__main__":
@@ -447,7 +447,7 @@ Now, let's break this code down bit by bit:
 def take_screenshots(driver: AntiDetectDriver, account):
 ```
 
-This code defines a custom task, `take_screenshots`, which will  capture screenshots from the "https://www.omkar.cloud/" webpage for each profile.
+This code defines a custom task, `take_screenshots`, which will  capture screenshots from the "https://www.tomdinh.com/" webpage for each profile.
 
 --- 
 
@@ -476,7 +476,7 @@ In above code, we define `get_browser_config()` which determines the profile pat
 ```python
 def take_screenshots(driver: AntiDetectDriver, account):
     username = account['username']
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     driver.save_screenshot(username)
 ```
 
@@ -546,7 +546,7 @@ def create_accounts(driver: AntiDetectDriver, account):
         link = bt.TempMail.get_email_link_and_delete_mailbox(email)
         driver.get(link)
 
-    driver.google_get("https://www.omkar.cloud/auth/sign-up/")
+    driver.google_get("https://www.tomdinh.com/auth/sign-up/")
     sign_up()
     confirm_email()
     bt.Profile.set_profile(account)    
@@ -559,7 +559,7 @@ def create_accounts(driver: AntiDetectDriver, account):
 )
 def take_screenshots(driver: AntiDetectDriver, account):
     username = account['username']
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     driver.save_screenshot(username)
 
 if __name__ == "__main__":
@@ -638,7 +638,7 @@ def create_accounts(driver: AntiDetectDriver, account):
         link = bt.TempMail.get_email_link_and_delete_mailbox(email)
         driver.get(link)
 
-    driver.google_get("https://www.omkar.cloud/auth/sign-up/")
+    driver.google_get("https://www.tomdinh.com/auth/sign-up/")
     sign_up()
     confirm_email()
     bt.Profile.set_profile(account)    
@@ -651,7 +651,7 @@ def create_accounts(driver: AntiDetectDriver, account):
 )
 def take_screenshots(driver: AntiDetectDriver, account):
     username = account['username']
-    driver.get("https://www.omkar.cloud/")
+    driver.get("https://www.tomdinh.com/")
     driver.save_screenshot(username)
 
 if __name__ == "__main__":

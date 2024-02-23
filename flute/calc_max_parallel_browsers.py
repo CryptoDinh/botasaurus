@@ -1,7 +1,7 @@
 from psutil import virtual_memory
 
 class BrowserResourceConfig:
-    AVERAGE_RICH_MEDIA_SITE = 0.5  # 0.5 GB like omkar.cloud (Most Common) 
+    AVERAGE_RICH_MEDIA_SITE = 0.5  # 0.5 GB like tomdinh.com (Most Common) 
     STATIC_SIMPLE_SITE = 0.3  # 0.3 GB like stackoverflow.com
     VIDEO_SITE = 0.8  # 0.8 GB like youtube.com, udemy.com
 
@@ -11,7 +11,7 @@ def calc_max_parallel_browsers(average_ram_per_instance = BrowserResourceConfig.
 
         :param average_ram_per_instance: The average RAM usage per Chrome instance in GB.
                                      This value can vary based on the type of website being accessed:
-                                     - Average Rich Media Site like omkar.cloud: 0.5 GB
+                                     - Average Rich Media Site like tomdinh.com: 0.5 GB
                                      - Static Simple Site like moralstories26.com: 0.3 GB
                                      - Video Site like youtube.com, udemy.com: 0.8 GB
         :return: The maximum number of browser instances that can be run simultaneously.
