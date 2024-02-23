@@ -10,7 +10,7 @@ install_requires = [
     "chromedriver-autoinstaller-fix",
     "cloudscraper",
     "selenium==4.5.0",
-    "botasaurus-proxy-authentication",
+    "flute-proxy-authentication",
     "capsolver_extension_python",
 ]
 extras_require = {}
@@ -28,14 +28,14 @@ def get_description():
         return None
 
 setup(
-    name="botasaurus",
-    packages=["botasaurus"],
+    name="flute",
+    packages=["flute"],
     version='3.2.22',
     license="MIT",
     project_urls={
-        "Documentation": "https://omkar.cloud/botasaurus/",
-        "Source": "https://github.com/omkarcloud/botasaurus",
-        "Tracker": "https://github.com/omkarcloud/botasaurus/issues",
+        "Documentation": "https://omkar.cloud/flute/",
+        "Source": "https://github.com/omkarcloud/flute",
+        "Tracker": "https://github.com/omkarcloud/flute/issues",
     },
     description="The All in One Web Scraping Framework",
     long_description_content_type="text/markdown",

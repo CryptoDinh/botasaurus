@@ -15,7 +15,7 @@ By scraping Google Maps, we can access the phone numbers and websites of busines
 In this tutorial, not only will you develop a practical scraping tool, but you will also gain hands-on experience in:
 
 - Running bots in parallel for faster scraping.
-- Understanding the overall process of a web scraping project with Botasaurus.
+- Understanding the overall process of a web scraping project with flute.
 - Saving the extracted data in both CSV and JSON formats.
 - Setting up your scraper in a Docker environment for consistent and reproducible execution.
 
@@ -25,9 +25,9 @@ Now that you have an overview of what's in store, let's start building!
 
 ## 🛠️ How Are We Gonna Build That?
 
-Let's break down the steps to build our Google Maps scraper with Botasaurus:
+Let's break down the steps to build our Google Maps scraper with flute:
 
-- Create a new project using the `botasaurus-starter` template.
+- Create a new project using the `flute-starter` template.
 - Then, we'll visit the search query page.
 ![Gmaps Search](/img/gmaps-search.png)
 - Next, we'll scroll through the list of places until we've scrolled to the end of the list.
@@ -46,9 +46,9 @@ Shall we begin :)?
 
 ## 🏭 Setting Up the Project
 
-To kickstart our Google Maps scraping project, we recommend using the Botasaurus Starter Template.
+To kickstart our Google Maps scraping project, we recommend using the flute Starter Template.
 
-It's the recommended way for creating greenfield Botasaurus projects because it includes all the necessary boilerplate code, .gitignore, and Docker files.
+It's the recommended way for creating greenfield flute projects because it includes all the necessary boilerplate code, .gitignore, and Docker files.
 
 This lets you dive right into developing your bot without any setup hassles.
 
@@ -56,10 +56,10 @@ Here's the quick setup process:
 
 **1. Clone the Starter Template**:
 
-Clone the Botasaurus Starter Template:
+Clone the flute Starter Template:
 
 ```bash
-git clone https://github.com/omkarcloud/botasaurus-starter my-botasaurus-project
+git clone https://github.com/omkarcloud/flute-starter my-flute-project
 ```
 
 **2. Navigate and Prepare**:
@@ -67,7 +67,7 @@ git clone https://github.com/omkarcloud/botasaurus-starter my-botasaurus-project
 Move to the project directory:
 
 ```bash
-cd my-botasaurus-project
+cd my-flute-project
 ```
 
 If you prefer Visual Studio Code for development, open the project in Visual Studio Code:
@@ -233,11 +233,11 @@ With this, you've successfully extracted the required data for each place from G
 
 ## ⚡ Speeding Up with Parallelism
 
-Don't worry, if terms like async, parallelism, and concurrency sound intimidating to you, running bots in parallel is very simple in Botasaurus.
+Don't worry, if terms like async, parallelism, and concurrency sound intimidating to you, running bots in parallel is very simple in flute.
 
 To speed up our scraping process, we'll employ parallelism by running multiple bots simultaneously. 
 
-Implementing parallelism in Botasaurus is as simple as 2 lines of code:
+Implementing parallelism in flute is as simple as 2 lines of code:
 
 ```python
 
@@ -253,7 +253,7 @@ def scrape_places(driver: AntiDetectDriver, link):
 <!-- 
 ## 📤 Returning Data
 
-Botasaurus, by design, saves any data returned from the function as both a CSV file and a JSON file.
+flute, by design, saves any data returned from the function as both a CSV file and a JSON file.
 
 So, simply return `scraped_places` to save them as a CSV and JSON File:
 
@@ -274,7 +274,7 @@ Loading image resources can:
 
 Fortunately, we can enhance the cost efficiency and speed of our scraper by blocking images from loading.
 
-In Botasaurus, you can easily configure the browser used by your bot to block images. Here's the simple code to do so:
+In flute, you can easily configure the browser used by your bot to block images. Here's the simple code to do so:
 
 ```python
 
@@ -290,7 +290,7 @@ Now, it's time to launch the bot and see it in action!
 
 1. In the repository cloned earlier, open `task.py` and paste the following code.
 ```python
-from botasaurus import *
+from flute import *
 import urllib.parse
 
 @browser(
@@ -419,7 +419,7 @@ Docker enables the encapsulation of an application along with its dependencies. 
 
 Additionally, it also helps in reducing vendor lock-in.
 
-Thankfully, our `botasaurus-starter` already comes with a `Dockerfile` and a `docker-compose.yml` file, making the dockerization process easy.
+Thankfully, our `flute-starter` already comes with a `Dockerfile` and a `docker-compose.yml` file, making the dockerization process easy.
 
 To run your scraper inside a Docker container, execute the following command:
 
@@ -437,5 +437,5 @@ We've developed an advanced, production-ready version of the scraper that's **4x
 
 ## 🎉 What's Next?
 
-Congrats! You've built a powerful Google Maps scraper and mastered Botasaurus. Now, it's time to unleash your bot-building skills in the real world!
+Congrats! You've built a powerful Google Maps scraper and mastered flute. Now, it's time to unleash your bot-building skills in the real world!
 

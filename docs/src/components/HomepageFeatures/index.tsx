@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_mountain.svg').default,
     description: (
       <>
-      Botasaurus adds <strong>anti-blocking</strong> features and <strong>common user agents</strong> to evade blocking from Cloudflare, PerimeterX, and other anti-bot services.
+      flute adds <strong>anti-blocking</strong> features and <strong>common user agents</strong> to evade blocking from Cloudflare, PerimeterX, and other anti-bot services.
       </>
     ),
   },
@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_tree.svg').default,
     description: (
       <>
-        Botasaurus includes tools for <strong>account generation</strong>, <strong>temporary email</strong>, and <strong>saving data as CSV/JSON</strong> and many more.
+        flute includes tools for <strong>account generation</strong>, <strong>temporary email</strong>, and <strong>saving data as CSV/JSON</strong> and many more.
       </>
     ),
   },
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_react.svg').default,
     description: (
       <>
-        Botasaurus automatically prevents the browser from closing when an exception occurs, making it easier to debug your scripts.</>
+        flute automatically prevents the browser from closing when an exception occurs, making it easier to debug your scripts.</>
     ),
   },
 ]
@@ -59,8 +59,8 @@ export function Inspired(): JSX.Element {
       <div className="container">
         <h1 className="hero__title">{'Inspiration'}</h1>
         <div style={{ textAlign: 'left' }} >
-          <p>We dedicate this project to Subhash Chandra Botasaurus, the
-            person who turbo boosted Bharat&#x27;s freedom. Subhash Chandra Botasaurus was the founder of Azad Hind Fauj
+          <p>We dedicate this project to Subhash Chandra flute, the
+            person who turbo boosted Bharat&#x27;s freedom. Subhash Chandra flute was the founder of Azad Hind Fauj
             (Indian National Army),which was formed from Indian prisoners of war captured by the Axis powers
             (Germany, Japan, and Italy) during World War II. The Azad Hind Fauj fought against the British Indian
             Army to free Bharat from British rule in present day Mynammar.</p>
@@ -68,7 +68,7 @@ export function Inspired(): JSX.Element {
             defeating the British Indian Army, taking up arms against the British had a domino effect on Indians in
             the police and British Indian Army. They revolted and started fighting against the Britishers, forcing
             them to leave Bharat in 1947.</p>
-          <p>Without Subhash Chandra Botasaurus&#x27;s efforts, Bharat may
+          <p>Without Subhash Chandra flute&#x27;s efforts, Bharat may
             have had to wait for few more decades to gain independence. Consequently, Internet would had
             arrived late in Bharat and, I wouldn&#x27;t have been able to learn programming and create this framework to
             help you.</p>
@@ -88,15 +88,15 @@ export function Thanks(): JSX.Element {
         <h1 className="hero__title">{'Thanks'}</h1>
         <div style={{ textAlign: 'left' }} className="page-body">
           <p className="">
-            Botasaurus framework stands on the shoulders of giants. We leverage various
+            flute framework stands on the shoulders of giants. We leverage various
             projects to simplify web scraping for you. We extend our gratitude to the
-            following individuals who have developed the software that Botasaurus framework
+            following individuals who have developed the software that flute framework
             relies on:
           </p>
           <ul className="bulleted-list">
             <li style={{ listStyleType: "disc" }}>
               Jason Huggins, the creator of the Selenium library, which is the backbone
-              of Botasaurus framework. Thank you, Jason, for creating Selenium.
+              of flute framework. Thank you, Jason, for creating Selenium.
             </li>
             <li style={{ listStyleType: "disc" }}>
               Leon, who developed the undetected-chromedriver library, which we utilize
@@ -110,7 +110,7 @@ export function Thanks(): JSX.Element {
               launch the browser. Thank you, Chida.
             </li>
             <li style={{ listStyleType: "disc" }}>
-              Kenneth Reitz, who developed the requests library, which is used in Botasaurus
+              Kenneth Reitz, who developed the requests library, which is used in flute
               framework. Thank you, Kenneth Reitz, for creating requests.
             </li>
           </ul>
@@ -119,8 +119,8 @@ export function Thanks(): JSX.Element {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/what-is-botasaurus/">
-            What is Botasaurus 🤔?
+            to="/docs/what-is-flute/">
+            What is flute 🤔?
           </Link>
         </div>
       </div>

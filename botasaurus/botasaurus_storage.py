@@ -6,7 +6,7 @@ def relative_path(path, goback=0):
     return os.path.abspath(os.path.join(os.getcwd(), *levels, path.strip()))
 
 def get_cache_file_path() -> str:
-    dr = os.path.abspath(os.path.join(os.path.dirname(__file__),  'botasaurus_storage.json'))
+    dr = os.path.abspath(os.path.join(os.path.dirname(__file__),  'flute_storage.json'))
     return dr
 
 class localStoragePyStorageException(Exception):
@@ -98,4 +98,4 @@ class _LocalStorage:
     # def get_new_number(self):
     #     return self.storage_backend_instance.get_new_number()
 
-BotasaurusStorage = _LocalStorage()
+fluteStorage = _LocalStorage()

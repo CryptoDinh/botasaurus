@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/mascot.png" alt="botasaurus" />
+  <img src="https://raw.githubusercontent.com/omkarcloud/flute/master/images/mascot.png" alt="flute" />
 </p>
   <div align="center" style="margin-top: 0;">
-  <h1>🤖 Botasaurus 🤖</h1>
+  <h1>🤖 flute 🤖</h1>
   </div>
 
 <h3 align="center">
@@ -15,12 +15,12 @@
 
 
 <p align="center">
-  <img src="https://views.whatilearened.today/views/github/omkarcloud/botasaurus.svg" width="80px" height="28px" alt="View" />
+  <img src="https://views.whatilearened.today/views/github/omkarcloud/flute.svg" width="80px" height="28px" alt="View" />
 </p>
 
 
 <p align="center">
-  <a href="https://gitpod.io/#https://github.com/omkarcloud/botasaurus-starter">
+  <a href="https://gitpod.io/#https://github.com/omkarcloud/flute-starter">
     <img alt="Run in Gitpod" src="https://gitpod.io/button/open-in-gitpod.svg" />
   </a>
 </p>
@@ -29,51 +29,51 @@
 
 ## In a nutshell
 
-Botasaurus is an all-in-one web scraping framework that enables you to build awesome scrapers in less time. It solves the key pain points that we, as developers, face when scraping the modern web.
+flute is an all-in-one web scraping framework that enables you to build awesome scrapers in less time. It solves the key pain points that we, as developers, face when scraping the modern web.
 
 Our mission is to make creating awesome scrapers easy for everyone.
 
 ## Features
 
-Botasaurus is built for creating awesome scrapers. It comes fully baked, with batteries included. Here is a list of things it can do that no other web scraping framework can:
+flute is built for creating awesome scrapers. It comes fully baked, with batteries included. Here is a list of things it can do that no other web scraping framework can:
 
-- **Most Stealthiest Framework LITERALLY**: Based on the benchmarks, which we encourage you to read [here](https://github.com/omkarcloud/botasaurus-vs-undetected-chromedriver-vs-puppeteer-stealth-benchmarks), our framework stands as the most stealthy in both the JS and Python universes. It is more stealthy than the popular Python library `undetected-chromedriver` and the well-known JavaScript library `puppeteer-stealth`. Botasaurus can easily visit websites like `https://nowsecure.nl/`. With Botasaurus, you don't need to waste time finding ways to unblock a website. For usage, [see this FAQ.](https://github.com/omkarcloud/botasaurus/tree/master#can-you-bypass-cloudflareimperva-challenges)
-- **Access Cloudflare Websites with Simple HTTP Requests:** We can access Cloudflare-protected pages using simple HTTP requests. Saving you both time and money spent on proxies. For usage, [see this FAQ.](https://github.com/omkarcloud/botasaurus/tree/master#how-to-scrape-cloudflare-protected-websites-with-simple-http-requests)
+- **Most Stealthiest Framework LITERALLY**: Based on the benchmarks, which we encourage you to read [here](https://github.com/omkarcloud/flute-vs-undetected-chromedriver-vs-puppeteer-stealth-benchmarks), our framework stands as the most stealthy in both the JS and Python universes. It is more stealthy than the popular Python library `undetected-chromedriver` and the well-known JavaScript library `puppeteer-stealth`. flute can easily visit websites like `https://nowsecure.nl/`. With flute, you don't need to waste time finding ways to unblock a website. For usage, [see this FAQ.](https://github.com/omkarcloud/flute/tree/master#can-you-bypass-cloudflareimperva-challenges)
+- **Access Cloudflare Websites with Simple HTTP Requests:** We can access Cloudflare-protected pages using simple HTTP requests. Saving you both time and money spent on proxies. For usage, [see this FAQ.](https://github.com/omkarcloud/flute/tree/master#how-to-scrape-cloudflare-protected-websites-with-simple-http-requests)
 - **SSL Support for Authenticated Proxy:** We are the first and only Python Web Scraping Framework as of writing to offer SSL support for authenticated proxies. No other browser automation libraries be it seleniumwire, puppeteer, playwright offers this important web scraping feature, this feautre enables you to easily access Cloudflare protected websites when using authenticated proxies, which would otherwise be blocked if you used only the bare authenticated proxy.
-- **Use Any Chrome Extension with Just 1 Line of Code:** Easily integrate any Chrome extension, be it a Captcha Solving Extension, Adblocker, or any other from the Chrome Web Store, with just [one line of code.](https://github.com/omkarcloud/botasaurus#how-to-use-chrome-extensions). Say Sayonara, to the manual process of downloading, unzipping, configuring, and loading extensions. 
-- **Sitemap Support:** With just [one line of code](https://github.com/omkarcloud/botasaurus#how-to-extract-links-from-a-sitemap), you can get all links for a website.
+- **Use Any Chrome Extension with Just 1 Line of Code:** Easily integrate any Chrome extension, be it a Captcha Solving Extension, Adblocker, or any other from the Chrome Web Store, with just [one line of code.](https://github.com/omkarcloud/flute#how-to-use-chrome-extensions). Say Sayonara, to the manual process of downloading, unzipping, configuring, and loading extensions. 
+- **Sitemap Support:** With just [one line of code](https://github.com/omkarcloud/flute#how-to-extract-links-from-a-sitemap), you can get all links for a website.
 - **Data Cleaners:** Make your scrapers robust by cleaning data with expert created data cleaners.
-- **Debuggability:** When a crash occurs due to an incorrect selector, etc., Botasaurus pauses the browser instead of closing it, facilitating painless on-the-spot debugging.
-- **Caching:** Botasaurus allows you to cache web scraping results, ensuring lightning-fast performance on subsequent scrapes.
+- **Debuggability:** When a crash occurs due to an incorrect selector, etc., flute pauses the browser instead of closing it, facilitating painless on-the-spot debugging.
+- **Caching:** flute allows you to cache web scraping results, ensuring lightning-fast performance on subsequent scrapes.
 - **Easy Configuration:** Easily save hours of Development Time with easy parallelization, profile, and proxy configuration. We make asynchronous, parallel scraping a child's play.
 - **Build Robust Scrapers:** Easily configure retry on exceptions to ensure no errors comes in between you and the data
-- **Time-Saving Selenium Shortcuts:** Botasaurus comes with numerous Selenium shortcuts to make web scraping incredibly easy.
+- **Time-Saving Selenium Shortcuts:** flute comes with numerous Selenium shortcuts to make web scraping incredibly easy.
 
-## 🚀 Getting Started with Botasaurus
+## 🚀 Getting Started with flute
 
-Welcome to Botasaurus! Let’s dive right in with a straightforward example to understand how it works.
+Welcome to flute! Let’s dive right in with a straightforward example to understand how it works.
 
 In this tutorial, we will go through the steps to scrape the heading text from [https://www.omkar.cloud/](https://www.omkar.cloud/).
 
-![Botasaurus in action](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/starter-bot-running.gif)
+![flute in action](https://raw.githubusercontent.com/omkarcloud/flute/master/images/starter-bot-running.gif)
 
-### Step 1: Install Botasaurus
+### Step 1: Install flute
 
-First things first, you need to install Botasaurus. Run the following command in your terminal:
+First things first, you need to install flute. Run the following command in your terminal:
 
 ```shell
-python -m pip install botasaurus
+python -m pip install flute
 ```
 
-### Step 2: Set Up Your Botasaurus Project
+### Step 2: Set Up Your flute Project
 
 Next, let’s set up the project:
 
-1. Create a directory for your Botasaurus project and navigate into it:
+1. Create a directory for your flute project and navigate into it:
 
 ```shell
-mkdir my-botasaurus-project
-cd my-botasaurus-project
+mkdir my-flute-project
+cd my-flute-project
 code .  # This will open the project in VSCode if you have it installed
 ```
 
@@ -82,7 +82,7 @@ code .  # This will open the project in VSCode if you have it installed
 Now, create a Python script named `main.py` in your project directory and insert the following code:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @browser
 def scrape_heading_task(driver: AntiDetectDriver, data):
@@ -110,7 +110,7 @@ Let’s understand this code:
 def scrape_heading_task(driver: AntiDetectDriver, data):
 ```  
 
-- Botasaurus automatically provides an Anti Detection Selenium driver to our function:
+- flute automatically provides an Anti Detection Selenium driver to our function:
 ```python
 def scrape_heading_task(driver: AntiDetectDriver, data):
 ```  
@@ -118,7 +118,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
 - Inside the function, we:
     - Navigate to Omkar Cloud
     - Extract the heading text
-    - Return the data to be automatically saved as `scrape_heading_task.json` by Botasaurus:
+    - Return the data to be automatically saved as `scrape_heading_task.json` by flute:
 ```python
     driver.get("https://www.omkar.cloud/")
     heading = driver.text("h1")
@@ -145,12 +145,12 @@ After executing the script, it will:
 - Extract the heading text
 - Save it automatically as `output/scrape_heading_task.json`.
 
-![Botasaurus in action](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/starter-bot-running.gif)
+![flute in action](https://raw.githubusercontent.com/omkarcloud/flute/master/images/starter-bot-running.gif)
 
 Now, let’s explore another way to scrape the heading using the `request` module. Replace the previous code in `main.py` with the following:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @request
 def scrape_heading_task(request: AntiDetectRequests, data):
@@ -185,18 +185,18 @@ python main.py
 
 This time, you will observe the same result as before, but instead of using Anti Detect Selenium, we are utilizing the Anti Detect request module.
 
-*Note: If you don't have Python installed, then you can run Botasaurus in Gitpod, a browser-based development environment, by following [this section](https://github.com/omkarcloud/botasaurus#how-to-run-botasaurus-in-gitpod).*
+*Note: If you don't have Python installed, then you can run flute in Gitpod, a browser-based development environment, by following [this section](https://github.com/omkarcloud/flute#how-to-run-flute-in-gitpod).*
 
-## 💡 Understanding Botasaurus
+## 💡 Understanding flute
 
-Let's learn about the features of Botasaurus that assist you in web scraping and automation.
+Let's learn about the features of flute that assist you in web scraping and automation.
 
 ### Could you show me an example where you access Cloudflare Protected Website?
 
 Sure, Run the following Python code to access G2.com, a website protected by Cloudflare:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @browser()
 def scrape_heading_task(driver: AntiDetectDriver, data):
@@ -210,7 +210,7 @@ scrape_heading_task()
 
 After running this script, you'll notice that the G2 page opens successfully, and the code prints the page's heading.
 
-![not blocked](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/botasurussuccesspage.png)
+![not blocked](https://raw.githubusercontent.com/omkarcloud/flute/master/images/botasurussuccesspage.png)
 
 ### How to Scrape Multiple Data Points/Links?
 
@@ -222,9 +222,9 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...
 ```
 
-Botasaurus will launch a new browser instance for each item in the list and merge and store the results in `scrape_heading_task.json` at the end of the scraping.
+flute will launch a new browser instance for each item in the list and merge and store the results in `scrape_heading_task.json` at the end of the scraping.
 
-![scraped data](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/scraped-data.png)
+![scraped data](https://raw.githubusercontent.com/omkarcloud/flute/master/images/scraped-data.png)
 
 Please note that the `data` parameter can also handle items such as dictionaries.
 
@@ -271,13 +271,13 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
 ```
 
 
-### How Botasaurus helps me in debugging?
+### How flute helps me in debugging?
 
-Botasaurus enhances the debugging experience by pausing the browser instead of closing it when an error occurs. This allows you to inspect the page and understand what went wrong, which can be especially helpful in debugging and removing the hassle of reproducing edge cases.
+flute enhances the debugging experience by pausing the browser instead of closing it when an error occurs. This allows you to inspect the page and understand what went wrong, which can be especially helpful in debugging and removing the hassle of reproducing edge cases.
 
-Botasaurus also plays a beep sound to alert you when an error occurs.
+flute also plays a beep sound to alert you when an error occurs.
 
-![](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/error-prompt.png)
+![](https://raw.githubusercontent.com/omkarcloud/flute/master/images/error-prompt.png)
 
 ### How to Block Resources like CSS, Images, and Fonts to Save Bandwidth?
 
@@ -323,7 +323,7 @@ scrape_heading_task()
 To configure various settings such as UserAgent, Proxy, Chrome Profile, and headless mode, you can specify them in the decorator as shown below:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @browser(
   headless=True, 
@@ -447,11 +447,11 @@ driver.quit()
 
 You will definitely encounter a block by Cloudflare:
 
-![blocked](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/seleniumwireblocked.png)
+![blocked](https://raw.githubusercontent.com/omkarcloud/flute/master/images/seleniumwireblocked.png)
 
-However, using proxies with Botasaurus prevents this issue. See the difference by running the following code:
+However, using proxies with flute prevents this issue. See the difference by running the following code:
 ```python
-from botasaurus import *
+from flute import *
 
 @browser(proxy="http://username:password@proxy-provider-domain:port") # TODO: Replace with your own proxy 
 def scrape_heading_task(driver: AntiDetectDriver, data):
@@ -461,7 +461,7 @@ scrape_heading_task()
 ```  
 
 Result: 
-![not blocked](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/botasurussuccesspage.png)
+![not blocked](https://raw.githubusercontent.com/omkarcloud/flute/master/images/botasurussuccesspage.png)
 
 NOTE: To run the code above, you will need Node.js installed.
 
@@ -474,7 +474,7 @@ All you need to do is specify the `use_stealth` option.
 Sounds too good to be true? Run the following code to see it in action:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @request(use_stealth=True)
 def scrape_heading_task(request: AntiDetectRequests, data):
@@ -506,7 +506,7 @@ Using `cloudscraper` library fails because, while it sends browser-like user age
 
 - Use the stealth request mode and visit via Google (default behavior). [Recommended]
 ```python
-from botasaurus import *
+from flute import *
 
 @request(use_stealth=True)
 def scrape_heading_task(request: AntiDetectRequests, data):
@@ -519,7 +519,7 @@ scrape_heading_task()
 
 - Use a real Chrome browser with Selenium and visit via Google. Example Code:
 ```python
-from botasaurus import *
+from flute import *
 
 @browser()
 def scrape_heading_task(driver: AntiDetectDriver, data):
@@ -550,8 +550,8 @@ Bare `selenium` and `puppeteer` definitely do not work due to a lot of automatio
 The Stealth Browser can easily solve JS Challenges. See the truth for yourself by running this code:
 
 ```python
-from botasaurus import *
-from botasaurus.create_stealth_driver import create_stealth_driver
+from flute import *
+from flute.create_stealth_driver import create_stealth_driver
 
 @browser(
     create_driver=create_stealth_driver(
@@ -583,8 +583,8 @@ Again, tools like `selenium`, `puppeteer`, `undetected-chromedriver`, and `puppe
 The Stealth Browser can easily solve these challenges. See it in action by running this code:
 
 ```python
-from botasaurus import *
-from botasaurus.create_stealth_driver import create_stealth_driver
+from flute import *
+from flute.create_stealth_driver import create_stealth_driver
 
 @browser(
     create_driver=create_stealth_driver(
@@ -602,8 +602,8 @@ scrape_heading_task()
 *Notes:*
 1. In stealth browser mode, we default to an 8-second wait before connecting to the browser via Selenium because connecting too early gets us detected. You can customize the wait time by using the `wait` argument. 
 ```python
-from botasaurus import *
-from botasaurus.create_stealth_driver import create_stealth_driver
+from flute import *
+from flute.create_stealth_driver import create_stealth_driver
 
 @browser(
     create_driver=create_stealth_driver(
@@ -637,8 +637,8 @@ Here are some recommendations for wait times:
 
 3. If you are automating Cloudflare Websites with JS Challenges like https://nowsecure.nl/, then you must pass start_url to solve them like this:
 ```python
-from botasaurus import *
-from botasaurus.create_stealth_driver import create_stealth_driver
+from flute import *
+from flute.create_stealth_driver import create_stealth_driver
 
 @browser(
     create_driver=create_stealth_driver(
@@ -650,8 +650,8 @@ from botasaurus.create_stealth_driver import create_stealth_driver
 However, if you are automating websites not protected by Cloudflare or protected by Cloudflare Connection Challenge, then you may pass `None` to start_url. With this, we will also not perform a wait before connecting to Chrome, saving you time.
 
 ```python
-from botasaurus import *
-from botasaurus.create_stealth_driver import create_stealth_driver
+from flute import *
+from flute.create_stealth_driver import create_stealth_driver
 
 @browser(
     create_driver=create_stealth_driver(
@@ -663,8 +663,8 @@ from botasaurus.create_stealth_driver import create_stealth_driver
 
 4. Anti Detection Systems can detect fake randomly generated user agents. So, if you are getting detected, especially on Ubuntu with Cloudflare JS with Captcha Challenge, we recommend using your real user agent and window size, not a randomly generated one. Here's how you can do it:
 ```python
-from botasaurus import *
-from botasaurus.create_stealth_driver import create_stealth_driver
+from flute import *
+from flute.create_stealth_driver import create_stealth_driver
 
 @browser(
     user_agent=bt.UserAgent.REAL, 
@@ -685,8 +685,8 @@ If you are doing web scraping of publicly available data, then the above code is
 
 5. We expect to access Cloudflare websites 9 out of 10 times. However, in some cases, they do detect us for reasons like IP blacklisting. In such cases, you can use the following code snippet to make your scraper more robust:
 ```python
-from botasaurus import *
-from botasaurus.create_stealth_driver import create_stealth_driver
+from flute import *
+from flute.create_stealth_driver import create_stealth_driver
 
 def get_start_url(data):
     return data
@@ -716,7 +716,7 @@ The above code makes the scraper more robust by raising an exception when detect
 Facing captchas is really common and annoying hurdle in web scraping. Fortunately, CapSolver can be used to automatically solve captchas, saving both time and effort. Here's how you can use it:
 
 ```python
-from botasaurus import *
+from flute import *
 from capsolver_extension_python import Capsolver
 
 @browser(
@@ -729,14 +729,14 @@ def solve_captcha(driver: AntiDetectDriver, data):
 solve_captcha()
 ```
 
-To solve captcha's with CapSolver, you will need Capsolver API Key. If you do not have a CapSolver API Key, follow the instructions [here](https://github.com/omkarcloud/botasaurus/blob/master/capsolver-sign-up.md) to create a CapSolver account and obtain one.
+To solve captcha's with CapSolver, you will need Capsolver API Key. If you do not have a CapSolver API Key, follow the instructions [here](https://github.com/omkarcloud/flute/blob/master/capsolver-sign-up.md) to create a CapSolver account and obtain one.
 
 ### How to Use Chrome Extensions?
 
-Botasaurus allows the use of ANY Chrome Extension with just 1 Line of Code. Below is an example that uses the AdBlocker Chrome Extension:
+flute allows the use of ANY Chrome Extension with just 1 Line of Code. Below is an example that uses the AdBlocker Chrome Extension:
 
 ```python
-from botasaurus import *
+from flute import *
 from chrome_extension_python import Extension
 
 @browser(
@@ -767,7 +767,7 @@ In web scraping, it is a common use case to scrape product pages, blogs, etc. Bu
 
 Many developers unnecessarily increase their work by writing code to visit each page one by one and scrape links, which they could have easily by just looking at the Sitemap.
 
-The Botasaurus Sitemap Module makes this process easy as cake by allowing you to get all links or sitemaps using:
+The flute Sitemap Module makes this process easy as cake by allowing you to get all links or sitemaps using:
 - The homepage URL (e.g., `https://www.omkar.cloud/`)
 - A direct sitemap link (e.g., `https://www.omkar.cloud/sitemap.xml`)
 - A `.gz` compressed sitemap (e.g., `https://www.g2.com/sitemaps/sitemap_index.xml.gz`)
@@ -775,8 +775,8 @@ The Botasaurus Sitemap Module makes this process easy as cake by allowing you to
 For example, if you're an Angel Investor seeking innovative tech startups, G2 is an ideal platform where companies showcase their products. You can run the following code to fetch over 160K+ product links from G2:
 
 ```python
-from botasaurus import *
-from botasaurus.sitemap import Sitemap, Filters, Extractors
+from flute import *
+from flute.sitemap import Sitemap, Filters, Extractors
 
 links = (
     Sitemap("https://www.g2.com/sitemaps/sitemap_index.xml.gz")
@@ -789,14 +789,14 @@ bt.write_temp_json(links)
 
 **Output:** 
 
-![g2-sitemap-links.png](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/g2-sitemap-links.png)
+![g2-sitemap-links.png](https://raw.githubusercontent.com/omkarcloud/flute/master/images/g2-sitemap-links.png)
 
 
 Or, if you're in the mood for some reading and looking for good stories, the following code will get you over 1000+ stories from [moralstories26.com](https://moralstories26.com/):
 
 ```python
-from botasaurus import *
-from botasaurus.sitemap import Sitemap, Filters
+from flute import *
+from flute.sitemap import Sitemap, Filters
 
 sitemaps = (
     Sitemap("https://moralstories26.com/")
@@ -814,13 +814,13 @@ bt.write_temp_json(sitemaps)
 
 **Output:** 
 
-![moralstories26-sitemap-links.png](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/moralstories26-sitemap-links.png)
+![moralstories26-sitemap-links.png](https://raw.githubusercontent.com/omkarcloud/flute/master/images/moralstories26-sitemap-links.png)
 
 Before scraping a site, it's useful to identify the available sitemaps. This can be easily done with the following code:
 
 ```python
-from botasaurus import *
-from botasaurus.sitemap import Sitemap
+from flute import *
+from flute.sitemap import Sitemap
 
 sitemaps = Sitemap("https://www.omkar.cloud/").sitemaps()
 bt.write_temp_json(sitemaps)
@@ -828,14 +828,14 @@ bt.write_temp_json(sitemaps)
 
 **Output:** 
 
-![omkar-sitemap-links.png](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/omkar-sitemap-links.png)
+![omkar-sitemap-links.png](https://raw.githubusercontent.com/omkarcloud/flute/master/images/omkar-sitemap-links.png)
 
 To ensure your scrapers run super fast, we cache the Sitemap, but you may want to periodically refresh the cache, which you can do as follows:
 
 ```python
-from botasaurus import *
-from botasaurus.sitemap import Sitemap
-from botasaurus.cache import Cache
+from flute import *
+from flute.sitemap import Sitemap
+from flute.cache import Cache
 
 sitemap = Sitemap(
     [
@@ -851,12 +851,12 @@ bt.write_temp_json(links)
 
 In summary, the sitemap is an awesome module for easily extracting links you want for web scraping.
 
-### Could you show me a practical example where all these Botasaurus Features Come Together to accomplish a typical web scraping project?
+### Could you show me a practical example where all these flute Features Come Together to accomplish a typical web scraping project?
 
-Below is a practical example of how Botasaurus features come together in a typical web scraping project to scrape a list of links from a blog, and then visit each link to retrieve the article's heading and date:
+Below is a practical example of how flute features come together in a typical web scraping project to scrape a list of links from a blog, and then visit each link to retrieve the article's heading and date:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @browser(block_resources=True,
          cache=True, 
@@ -890,16 +890,16 @@ if __name__ == "__main__":
 ```
 
 ### How to Clean Data?
-Botasaurus provides a module named `cl` that includes commonly used cleaning functions to save development time. Here are some of the most important ones:
+flute provides a module named `cl` that includes commonly used cleaning functions to save development time. Here are some of the most important ones:
 
 1. **`cl.select`**  
-   What `document.querySelector` is to js, is what `cl.select` is to json. This is the most used function in Botasaurus and is incredibly useful.
+   What `document.querySelector` is to js, is what `cl.select` is to json. This is the most used function in flute and is incredibly useful.
 
    This powerful function is popular for safely selecting data from nested JSON.
 
    Instead of using flaky code like this:
    ```python
-   from botasaurus import cl
+   from flute import cl
 
    data = {
      "person": {
@@ -927,7 +927,7 @@ Botasaurus provides a module named `cl` that includes commonly used cleaning fun
 
    You can write it as:
    ```python
-   from botasaurus import cl
+   from flute import cl
 
    data = {
      "person": {
@@ -949,7 +949,7 @@ Botasaurus provides a module named `cl` that includes commonly used cleaning fun
 
    `cl.select` returns `None` if the key is not found, instead of throwing an error.
    ```python
-   from botasaurus import cl
+   from flute import cl
 
    print(cl.select(data, 'name'))  # Omkar
    print(cl.select(data, 'friends', 0, 'name'))  # John
@@ -958,28 +958,28 @@ Botasaurus provides a module named `cl` that includes commonly used cleaning fun
 
    You can also use `map_data` like this:
    ```python
-   from botasaurus import cl
+   from flute import cl
 
    cl.select(data, 'name', map_data=lambda x: x.upper())  # OMKAR
    ```
 
    And use default values like this:
    ```python
-   from botasaurus import cl
+   from flute import cl
 
    cl.select(None, 'name', default="OMKAR")  # OMKAR
    ```
 
 2. **`cl.extract_numbers`**
    ```python
-   from botasaurus import cl
+   from flute import cl
 
    print(cl.extract_numbers("I can extract numbers with decimal like 4.5, or with comma like 1,000."))  # [4.5, 1000]
    ```
 
 3. **More Functions**
    ```python
-   from botasaurus import cl
+   from flute import cl
 
    print(cl.extract_links("I can extract links like https://www.omkar.cloud/ or https://www.omkar.cloud/blog/"))  # ['https://www.omkar.cloud/', 'https://www.omkar.cloud/blog/']
    print(cl.rename_keys({"name": "Omkar", "age": 21}, {"name": "full_name"}))  # {"full_name": "Omkar", "age": 21}
@@ -989,7 +989,7 @@ Botasaurus provides a module named `cl` that includes commonly used cleaning fun
    ```
 ### How to Read/Write JSON and CSV Files?
 
-Botasaurus provides convenient methods for reading and writing data:
+flute provides convenient methods for reading and writing data:
 
 ```python
 # Data to write to the file
@@ -1026,7 +1026,7 @@ AntiDetectDriver is a patched Version of Selenium that has been modified to avoi
 
 It also includes a variety of helper functions that make web scraping tasks easier.
 
-You can learn about these methods [here](https://github.com/omkarcloud/botasaurus/blob/master/anti-detect-driver.md).
+You can learn about these methods [here](https://github.com/omkarcloud/flute/blob/master/anti-detect-driver.md).
 
 ### What Features Does @request Support, Similar to @browser?
 
@@ -1070,25 +1070,25 @@ soup = anti_detect_request.bs4("https://www.omkar.cloud/")
 
 Sometimes, data is hidden behind an authentication wall, requiring you to sign up via email or Google to access it. Sign-up automation is designed for this use case; it assists in downloading reports, scraping account usage history, and more.
 
-Please note that it is important to use this functionality ethically and only for legitimate purposes. You can learn about it [here](https://www.omkar.cloud/botasaurus/docs/sign-up-features/)
+Please note that it is important to use this functionality ethically and only for legitimate purposes. You can learn about it [here](https://www.omkar.cloud/flute/docs/sign-up-features/)
 
 ---
 
-### How to Run Botasaurus in Docker?
+### How to Run flute in Docker?
 
-To run Botasaurus in Docker, use the Botasaurus Starter Template, which includes the necessary Dockerfile and Docker Compose configurations:
+To run flute in Docker, use the flute Starter Template, which includes the necessary Dockerfile and Docker Compose configurations:
 
 ```
-git clone https://github.com/omkarcloud/botasaurus-starter my-botasaurus-project
-cd my-botasaurus-project
+git clone https://github.com/omkarcloud/flute-starter my-flute-project
+cd my-flute-project
 docker-compose build && docker-compose up
 ```
 
-### How to Run Botasaurus in Gitpod?
+### How to Run flute in Gitpod?
 
-Botasaurus Starter Template comes with the necessary `.gitpod.yml` to easily run it in Gitpod, a browser-based development environment. Set it up in just 5 minutes by following these steps:
+flute Starter Template comes with the necessary `.gitpod.yml` to easily run it in Gitpod, a browser-based development environment. Set it up in just 5 minutes by following these steps:
 
-1. Open Botasaurus Starter Template, by visiting [this link](https://gitpod.io/#https://github.com/omkarcloud/botasaurus-starter) and sign up using your GitHub account.
+1. Open flute Starter Template, by visiting [this link](https://gitpod.io/#https://github.com/omkarcloud/flute-starter) and sign up using your GitHub account.
    
    ![Screenshot (148)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4.png)
   
@@ -1105,8 +1105,8 @@ python main.py
 ## Advanced Features
 
 
-### How Do I Configure the Output of My Scraping Function in Botasaurus?
-To configure the output of your scraping function in Botasaurus, you can customize the behavior in several ways:
+### How Do I Configure the Output of My Scraping Function in flute?
+To configure the output of your scraping function in flute, you can customize the behavior in several ways:
 
 1. **Change Output Filename**: Use the `output` parameter in the decorator to specify a custom filename for the output. 
    ```python
@@ -1140,14 +1140,14 @@ To configure the output of your scraping function in Botasaurus, you can customi
        # Your scraping logic here
    ```
 
-These options provide flexibility in how you handle the output of your scraping tasks with Botasaurus.
+These options provide flexibility in how you handle the output of your scraping tasks with flute.
 
 ### How to Run Drivers Asynchronously from the Main Process?
 
 To execute drivers asynchronously, enable the `async` option and use `.get()` when you're ready to collect the results:
 
 ```python
-from botasaurus import * 
+from flute import * 
 from time import sleep
 
 @browser(
@@ -1177,7 +1177,7 @@ The `async_queue` feature allows you to perform web scraping tasks in asyncronou
 #### Basic Example:
 
 ```python
-from botasaurus import * 
+from flute import * 
 from time import sleep
 
 @browser(async_queue=True)
@@ -1205,7 +1205,7 @@ if __name__ == "__main__":
 Here's how you could use `async_queue` to scrape webpage titles while scrolling through a list of links:
 
 ```python
-from botasaurus import * 
+from flute import * 
 
 @browser(async_queue=True)
 def scrape_title(driver: AntiDetectDriver, link):
@@ -1252,13 +1252,13 @@ if __name__ == "__main__":
 ```
 
 
-### How do I manage the Cache in Botasaurus?
+### How do I manage the Cache in flute?
 
-You can use The Cache Module in Botasaurus to easily manage cached data. Here's a simple example explaining its usage:
+You can use The Cache Module in flute to easily manage cached data. Here's a simple example explaining its usage:
 
 ```python
-from botasaurus import *
-from botasaurus.cache import Cache
+from flute import *
+from flute.cache import Cache
 
 # Example scraping function
 @request
@@ -1285,8 +1285,8 @@ Cache.clear(scrape_data)
 - Use stealth driver
 - For large-scale scraping, opt for Data Center Proxies over Residential as Residential Proxies are really expensive. Sometimes you will get blocked; so, use retries as demonstrated in the code below:
 ```python
-  from botasaurus import *
-from botasaurus.create_stealth_driver import create_stealth_driver
+  from flute import *
+from flute.create_stealth_driver import create_stealth_driver
 
   @browser(
         create_driver=create_stealth_driver(
@@ -1303,18 +1303,18 @@ from botasaurus.create_stealth_driver import create_stealth_driver
 ```
 
 
-### How Do I Close All Running Chrome Instances When Developing with Botasaurus?
+### How Do I Close All Running Chrome Instances When Developing with flute?
 
 While developing a scraper, you might need to interrupt the scraping process, often done by pressing `Ctrl + C`. However, this action does not automatically close the Chrome browsers, which can cause your computer to hang due to resource overuse.
 
-![Many Chrome processes running in Task Manager](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/chrome-running.png)
+![Many Chrome processes running in Task Manager](https://raw.githubusercontent.com/omkarcloud/flute/master/images/chrome-running.png)
 
 To prevent your PC from hanging, you need to close all running Chrome instances. 
 
 You can run following command to close all chromes
 
 ```shell
-python -m botasaurus.close
+python -m flute.close
 ```
 
 Executing above command will close all Chrome instances, thereby helping to prevent your PC from hanging.
@@ -1322,8 +1322,8 @@ Executing above command will close all Chrome instances, thereby helping to prev
 ---
 
 
-### What feautres are Coming in Botasaurus 4?
-Botasaurus 4, which is currently in its beta phase, allows you to:
+### What feautres are Coming in flute 4?
+flute 4, which is currently in its beta phase, allows you to:
   - A sms API to receive OTPs.
   - Run bots in the cloud using a website UI and control their schedules, starting/stopping times, and view bot outputs in a web UI. 
   - Use Kubernetes to run thousands of bots in parallel.
@@ -1333,42 +1333,42 @@ Botasaurus 4, which is currently in its beta phase, allows you to:
   - MySQL/PostgreSQL Integration
   - And Many More :)
   
-Developers are actively using Botasaurus 4 in production environments and saving hours of Development Time. To get access to Botasaurus 4, please [reach out to us](mailto:chetan@omkar.cloud?subject=Access%20Botasaurus%204&body=I%20want%20to%20use%20Botasaurus%204%20and%20gain%20access%20to%20feature%3A%20%5BTELL%20YOUR%20FEATURE%5D) and let us know which feature you would like to access.
+Developers are actively using flute 4 in production environments and saving hours of Development Time. To get access to flute 4, please [reach out to us](mailto:chetan@omkar.cloud?subject=Access%20flute%204&body=I%20want%20to%20use%20flute%204%20and%20gain%20access%20to%20feature%3A%20%5BTELL%20YOUR%20FEATURE%5D) and let us know which feature you would like to access.
  
 
 
 ### Conclusion
 
-Botasaurus is a powerful, flexible tool for web scraping. 
+flute is a powerful, flexible tool for web scraping. 
 
-Its various settings allow you to tailor the scraping process to your specific needs, improving both efficiency and convenience. Whether you're dealing with multiple data points, requiring parallel processing, or need to cache results, Botasaurus provides the features to streamline your scraping tasks.
+Its various settings allow you to tailor the scraping process to your specific needs, improving both efficiency and convenience. Whether you're dealing with multiple data points, requiring parallel processing, or need to cache results, flute provides the features to streamline your scraping tasks.
 
 ### ❓ Need More Help or Have Additional Questions?
 
 For further help, ask your question in GitHub Discussions. We'll be happy to help you out.
 
-[![ask github](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-on-github.png)](https://github.com/omkarcloud/botasaurus/discussions)
+[![ask github](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/ask-on-github.png)](https://github.com/omkarcloud/flute/discussions)
 
 ## Thanks
 
 - Kudos to the Apify Team for creating the `got-scraping` and `proxy-chain` libraries. The implementation of stealth Anti Detect Requests and SSL-based Proxy Authentication wouldn't have been possible without their groundbreaking work on `got-scraping` and `proxy-chain`.
-- Shout out to zfcsoftware for developing `puppeteer-real-browser`; it helped us in creating Botasaurus Anti Detected. Show your appreciation by subscribing to their [YouTube channel](https://www.youtube.com/@zfcsoftware/videos) ⚡.
+- Shout out to zfcsoftware for developing `puppeteer-real-browser`; it helped us in creating flute Anti Detected. Show your appreciation by subscribing to their [YouTube channel](https://www.youtube.com/@zfcsoftware/videos) ⚡.
 - A special thanks to the Selenium team for creating Selenium, an invaluable tool in our toolkit.
 - Thanks to Cloudflare, DataDome, Imperva, and all bot detectors. Had you not been there, we wouldn't be either 😅.
-- Finally, a humongous thank you for choosing Botasaurus.
+- Finally, a humongous thank you for choosing flute.
 
-## Love It? [Star It! ⭐](https://github.com/omkarcloud/botasaurus)
+## Love It? [Star It! ⭐](https://github.com/omkarcloud/flute)
 
 Become one of our amazing stargazers by giving us a star ⭐ on GitHub!
 
 It's just one click, but it means the world to me.
 
-[![Stargazers for @omkarcloud/botasaurus](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=botasaurus)](https://github.com/omkarcloud/botasaurus/stargazers)
+[![Stargazers for @omkarcloud/flute](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?user=omkarcloud&repo=flute)](https://github.com/omkarcloud/flute/stargazers)
 
-## Disclaimer for Botasaurus Project
+## Disclaimer for flute Project
 
-> By using Botasaurus, you agree to comply with all applicable local and international laws related to data scraping, copyright, and privacy. The developers of Botasaurus are not responsible for any misuse of this software. It is the sole responsibility of the user to ensure adherence to all relevant laws regarding data scraping, copyright, and privacy, and to use Botasaurus in an ethical and legal manner.
+> By using flute, you agree to comply with all applicable local and international laws related to data scraping, copyright, and privacy. The developers of flute are not responsible for any misuse of this software. It is the sole responsibility of the user to ensure adherence to all relevant laws regarding data scraping, copyright, and privacy, and to use flute in an ethical and legal manner.
 
-We take the concerns of the Botasaurus Project very seriously. For any inquiries or issues, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will take prompt and necessary action in response to your emails.
+We take the concerns of the flute Project very seriously. For any inquiries or issues, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will take prompt and necessary action in response to your emails.
 
 ## Made with ❤️ in Bharat 🇮🇳 - Vande Mataram

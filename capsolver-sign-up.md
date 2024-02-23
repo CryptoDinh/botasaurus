@@ -4,20 +4,20 @@ To simplify the captcha-solving process using CapSolver and save both time and e
 
 1. Start by creating a CapSolver account. Visit [capsolver.com](https://dashboard.capsolver.com/passport/register?inviteCode=XE68oraJ9nMM) to sign up.
 
-   ![Sign Up](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/sign_up_capsolver.png)
+   ![Sign Up](https://raw.githubusercontent.com/omkarcloud/flute/master/images/sign_up_capsolver.png)
 
 2. After setting up your account, the next step involves funding it. CapSolver allows you to add funds via various payment methods including PayPal and cryptocurrencies. Also, the minimum deposit is $6, and depending on your location, taxes ranging from 12% to 18% will apply.
 
-   ![Add Funds](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/put-funds.gif)
+   ![Add Funds](https://raw.githubusercontent.com/omkarcloud/flute/master/images/put-funds.gif)
 
 3. After funding your account, copy your unique API Key. This key will help us in integrating CapSolver with your projects.
 
-   ![Store API Key](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/copy-api-key.png)
+   ![Store API Key](https://raw.githubusercontent.com/omkarcloud/flute/master/images/copy-api-key.png)
 
 4. With your account ready and API Key in hand, you can now easily automate captcha solving. Below is an example Python code snippet demonstrating how to use CapSolver for automatic captcha solving:
 
 ```python
-from botasaurus import *
+from flute import *
 from capsolver_extension_python import Capsolver
 
 @browser(

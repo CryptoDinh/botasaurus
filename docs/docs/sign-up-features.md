@@ -15,7 +15,7 @@ user = bt.generate_user(country=bt.Country.IN)
 
 This will generate user profiles similar to the one shown below:
 
-![Account](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/generated-account.png)
+![Account](https://raw.githubusercontent.com/omkarcloud/flute/master/images/generated-account.png)
 
 The data generated is very realistic, reducing the likelihood of being flagged as a bot.
 
@@ -54,7 +54,7 @@ profiles = bt.Profile.get_all_profiles()
 
 ## The Chrome Profiles of User's are getting very large like 100MBs, is there a way to Compress them? 
 
-You can use tiny_profile feautre of Botasaurus which are a replacement for Chrome Profiles.
+You can use tiny_profile feautre of flute which are a replacement for Chrome Profiles.
 
 Each Tiny Profile only stores cookies from visited websites, making them extremely lightweight—around 1KB. Here's how to use them:
 
@@ -88,6 +88,6 @@ user_agent, proxy, and other options can also be passed as functions.
 
 ## Is there a Tutorial that integrates tiny_profile, temp mail, user generator, profile to sign up on a Website and Perform Actions on Website. So I can get a Complete Picture?
 
-For a comprehensive guide on using Botasaurus features such as `tiny_profile`, `temp_mail`, `user_generator`, and `profile` to sign up on a website and perform actions, read the Sign-Up Tutorial [Here](https://www.omkar.cloud/botasaurus/docs/sign-up-tutorial/). 
+For a comprehensive guide on using flute features such as `tiny_profile`, `temp_mail`, `user_generator`, and `profile` to sign up on a website and perform actions, read the Sign-Up Tutorial [Here](https://www.omkar.cloud/flute/docs/sign-up-tutorial/). 
 
 This tutorial will walk you through signing up for 3 accounts on Omkar Cloud and give you a complete understanding of the process.

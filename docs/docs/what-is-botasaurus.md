@@ -1,50 +1,50 @@
 ---
 sidebar_position: 1
-title: What is Botasaurus?
-description: Botasaurus is a Swiss Army knife 🔪 for web scraping and browser automation 🤖 that helps you create bots fast. ⚡️
+title: What is flute?
+description: flute is a Swiss Army knife 🔪 for web scraping and browser automation 🤖 that helps you create bots fast. ⚡️
 ---
 ## In a nutshell
 
-Botasaurus is an all in 1 web scraping framework built for the modern web. We
+flute is an all in 1 web scraping framework built for the modern web. We
 address the key pain points web scrapers face when scraping the web.
 
 Our aim it to make web scraping extremely easy and save you hours of Development Time.
 
 ## Features
 
-Botasaurus comes fully baked, with batteries included. Here is a list of things it can do that no other web scraping framework can:
+flute comes fully baked, with batteries included. Here is a list of things it can do that no other web scraping framework can:
 
 - **Anti Detect:** Make Anti Detect Requests and Selenium Visits.
-- **Debuggability:** When a crash occurs due to an incorrect selector, etc., Botasaurus pauses the browser instead of closing it, facilitating painless on-the-spot debugging.
-- **Caching:** Botasaurus allows you to cache web scraping results, ensuring lightning-fast performance on subsequent scrapes.
+- **Debuggability:** When a crash occurs due to an incorrect selector, etc., flute pauses the browser instead of closing it, facilitating painless on-the-spot debugging.
+- **Caching:** flute allows you to cache web scraping results, ensuring lightning-fast performance on subsequent scrapes.
 - **Easy Configuration:** Easily save time with parallelization, profile, and proxy configuration.
-- **Time-Saving Selenium Shortcuts:** Botasaurus comes with numerous Selenium shortcuts to make web scraping incredibly easy.
+- **Time-Saving Selenium Shortcuts:** flute comes with numerous Selenium shortcuts to make web scraping incredibly easy.
 
-## 🚀 Getting Started with Botasaurus
+## 🚀 Getting Started with flute
 
-Welcome to Botasaurus! Let’s dive right in with a straightforward example to understand how it works.
+Welcome to flute! Let’s dive right in with a straightforward example to understand how it works.
 
 In this tutorial, we will go through the steps to scrape the heading text from [https://www.omkar.cloud/](https://www.omkar.cloud/).
 
-![Botasaurus in action](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/starter-bot-running.gif)
+![flute in action](https://raw.githubusercontent.com/omkarcloud/flute/master/images/starter-bot-running.gif)
 
-### Step 1: Install Botasaurus
+### Step 1: Install flute
 
-First things first, you need to install Botasaurus. Run the following command in your terminal:
+First things first, you need to install flute. Run the following command in your terminal:
 
 ```shell
-python -m pip install botasaurus
+python -m pip install flute
 ```
 
-### Step 2: Set Up Your Botasaurus Project
+### Step 2: Set Up Your flute Project
 
 Next, let’s set up the project:
 
-1. Create a directory for your Botasaurus project and navigate into it:
+1. Create a directory for your flute project and navigate into it:
 
 ```shell
-mkdir my-botasaurus-project
-cd my-botasaurus-project
+mkdir my-flute-project
+cd my-flute-project
 code .  # This will open the project in VSCode if you have it installed
 ```
 
@@ -53,7 +53,7 @@ code .  # This will open the project in VSCode if you have it installed
 Now, create a Python script named `main.py` in your project directory and insert the following code:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @browser
 def scrape_heading_task(driver: AntiDetectDriver, data):
@@ -81,7 +81,7 @@ Let’s dissect this code:
 def scrape_heading_task(driver: AntiDetectDriver, data):
 ```  
 
-- Botasaurus automatically provides an Anti Detection Selenium driver to our function:
+- flute automatically provides an Anti Detection Selenium driver to our function:
 ```python
 def scrape_heading_task(driver: AntiDetectDriver, data):
 ```  
@@ -89,7 +89,7 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
 - Inside the function, we:
     - Navigate to Omkar Cloud
     - Extract the heading text
-    - Prepare the data to be automatically saved as JSON and CSV files by Botasaurus:
+    - Prepare the data to be automatically saved as JSON and CSV files by flute:
 ```python
     driver.get("https://www.omkar.cloud/")
     heading = driver.text("h1")
@@ -116,12 +116,12 @@ After executing the script, it will:
 - Extract the heading text
 - Save it automatically as `output/finished.json`.
 
-![Botasaurus in action](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/starter-bot-running.gif)
+![flute in action](https://raw.githubusercontent.com/omkarcloud/flute/master/images/starter-bot-running.gif)
 
 Now, let’s explore another way to scrape the heading using the `request` module. Replace the previous code in `main.py` with the following:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @request
 def scrape_heading_task(request: AntiDetectRequests, data):
@@ -156,9 +156,9 @@ python main.py
 
 This time, you will observe the same result as before, but instead of using Anti Detect Selenium, we are utilizing the Anti Detect request module.
 
-## 💡 Understanding Botasaurus
+## 💡 Understanding flute
 
-Let's learn about the features of Botasaurus that assist you in web scraping and automation.
+Let's learn about the features of flute that assist you in web scraping and automation.
 
 ### How to Scrape Multiple Data Points/Links?
 
@@ -170,9 +170,9 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...
 ```
 
-Botasaurus will launch a new browser instance for each item in the list and merge and store the results in `scrape_heading_task.json` at the end of the scraping.
+flute will launch a new browser instance for each item in the list and merge and store the results in `scrape_heading_task.json` at the end of the scraping.
 
-![scraped data](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/scraped-data.png)
+![scraped data](https://raw.githubusercontent.com/omkarcloud/flute/master/images/scraped-data.png)
 
 Please note that the `data` parameter can also handle items such as dictionaries.
 
@@ -219,13 +219,13 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
 ```
 
 
-### How Botasaurus helps me in debugging?
+### How flute helps me in debugging?
 
-Botasaurus enhances the debugging experience by pausing the browser instead of closing it when an error occurs. This allows you to inspect the page and understand what went wrong, which can be especially helpful in debugging and removing the hassle of reproducing edge cases.
+flute enhances the debugging experience by pausing the browser instead of closing it when an error occurs. This allows you to inspect the page and understand what went wrong, which can be especially helpful in debugging and removing the hassle of reproducing edge cases.
 
-Botasaurus also plays a beep sound to alert you when an error occurs.
+flute also plays a beep sound to alert you when an error occurs.
 
-![](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/error-prompt.png)
+![](https://raw.githubusercontent.com/omkarcloud/flute/master/images/error-prompt.png)
 
 ### How to Block Images?
 
@@ -280,9 +280,9 @@ def scrape_heading_task(driver: AntiDetectDriver, data):
   # ...
 ```
 
-### Could you show me a practical example where all these Botasaurus Features Come Together to accomplish a typical web scraping project?
+### Could you show me a practical example where all these flute Features Come Together to accomplish a typical web scraping project?
 
-Below is a practical example of how Botasaurus features come together in a typical web scraping project to scrape a list of links from a blog, and then visit each link to retrieve the article's heading and date:
+Below is a practical example of how flute features come together in a typical web scraping project to scrape a list of links from a blog, and then visit each link to retrieve the article's heading and date:
 
 ```python
 @browser(block_images=True,
@@ -320,7 +320,7 @@ if __name__ == "__main__":
 
 ### How to Read/Write JSON and CSV Files?
 
-Botasaurus provides convenient methods for reading and writing data:
+flute provides convenient methods for reading and writing data:
 
 ```python
 # Data to write to the file
@@ -357,7 +357,7 @@ AntiDetectDriver is a patched Version of Selenium that has been modified to avoi
 
 It also includes a variety of helper functions that make web scraping tasks easier.
 
-You can learn about these methods [here](https://github.com/omkarcloud/botasaurus/blob/master/anti-detect-driver.md).
+You can learn about these methods [here](https://github.com/omkarcloud/flute/blob/master/anti-detect-driver.md).
 
 ### What Features Does @request Support, Similar to @browser?
 
@@ -414,7 +414,7 @@ user = bt.generate_user(country=bt.Country.IN)
 
 This will generate user profiles similar to the one shown below:
 
-![Account](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/generated-account.png)
+![Account](https://raw.githubusercontent.com/omkarcloud/flute/master/images/generated-account.png)
 
 The data generated is very realistic, reducing the likelihood of being flagged as a bot.
 
@@ -453,7 +453,7 @@ profiles = bt.Profile.get_all_profiles()
 
 ### The Chrome Profiles of User's are getting very large like 100MBs, is there a way to Compress them? 
 
-You can use tiny_profile feautre of Botasaurus which are a replacement for Chrome Profiles.
+You can use tiny_profile feautre of flute which are a replacement for Chrome Profiles.
 
 Each Tiny Profile only stores cookies from visited websites, making them extremely lightweight—around 1KB. Here's how to use them:
 
@@ -487,25 +487,25 @@ user_agent, proxy, and other options can also be passed as functions.
 
 ### Is there a Tutorial that integrates tiny_profile, temp mail, user generator, profile to sign up on a Website and Perform Actions on Website. So I can get a Complete Picture?
 
-For a comprehensive guide on using Botasaurus features such as `tiny_profile`, `temp_mail`, `user_generator`, and `profile` to sign up on a website and perform actions, read the Sign-Up Tutorial [Here](https://www.omkar.cloud/botasaurus/docs/sign-up-tutorial/). 
+For a comprehensive guide on using flute features such as `tiny_profile`, `temp_mail`, `user_generator`, and `profile` to sign up on a website and perform actions, read the Sign-Up Tutorial [Here](https://www.omkar.cloud/flute/docs/sign-up-tutorial/). 
 
 This tutorial will walk you through signing up for 3 accounts on Omkar Cloud and give you a complete understanding of the process.
 
-### How to Run Botasaurus in Docker?
+### How to Run flute in Docker?
 
-To run Botasaurus in Docker, use the Botasaurus Starter Template, which includes the necessary Dockerfile and Docker Compose configurations:
+To run flute in Docker, use the flute Starter Template, which includes the necessary Dockerfile and Docker Compose configurations:
 
 ```
-git clone https://github.com/omkarcloud/botasaurus-starter my-botasaurus-project
-cd my-botasaurus-project
+git clone https://github.com/omkarcloud/flute-starter my-flute-project
+cd my-flute-project
 docker-compose build && docker-compose up
 ```
 
-### How to Run Botasaurus in Gitpod?
+### How to Run flute in Gitpod?
 
-Botasaurus Starter Template comes with the necessary `.gitpod.yml` to easily run it in Gitpod, a browser-based development environment. Set it up in just 5 minutes by following these steps:
+flute Starter Template comes with the necessary `.gitpod.yml` to easily run it in Gitpod, a browser-based development environment. Set it up in just 5 minutes by following these steps:
 
-1. Open Botasaurus Starter Template, by visiting [this link](https://gitpod.io/#https://github.com/omkarcloud/botasaurus-starter) and sign up using your GitHub account.
+1. Open flute Starter Template, by visiting [this link](https://gitpod.io/#https://github.com/omkarcloud/flute-starter) and sign up using your GitHub account.
    
    ![Screenshot (148)](https://github.com/omkarcloud/google-maps-scraper/assets/53407137/f498dda8-5352-4f7a-9d70-c717859670d4.png)
   
@@ -529,8 +529,8 @@ Please understand:
 *Advanced Features*
 
 
-### How Do I Configure the Output of My Scraping Function in Botasaurus?
-To configure the output of your scraping function in Botasaurus, you can customize the behavior in several ways:
+### How Do I Configure the Output of My Scraping Function in flute?
+To configure the output of your scraping function in flute, you can customize the behavior in several ways:
 
 1. **Change Output Filename**: Use the `output` parameter in the decorator to specify a custom filename for the output. 
    ```python
@@ -564,7 +564,7 @@ To configure the output of your scraping function in Botasaurus, you can customi
        # Your scraping logic here
    ```
 
-These options provide flexibility in how you handle the output of your scraping tasks with Botasaurus.
+These options provide flexibility in how you handle the output of your scraping tasks with flute.
 
 ### How to Run Drivers Asynchronously from the Main Process?
 
@@ -675,13 +675,13 @@ if __name__ == "__main__":
 ```
 
 
-### How do I manage the Cache in Botasaurus?
+### How do I manage the Cache in flute?
 
-You can use The Cache Module in Botasaurus to easily manage cached data. Here's a simple example explaining its usage:
+You can use The Cache Module in flute to easily manage cached data. Here's a simple example explaining its usage:
 
 ```python
-from botasaurus import *
-from botasaurus.cache import Cache
+from flute import *
+from flute.cache import Cache
 
 # Example scraping function
 @request
@@ -704,11 +704,11 @@ Cache.remove(scrape_data, input_data)
 Cache.clear(scrape_data)
 ```
 <!-- 
-### How Do I Close All Running Chrome Instances When Developing with Botasaurus?
+### How Do I Close All Running Chrome Instances When Developing with flute?
 
 While developing a scraper, you might need to interrupt the scraping process, often done by pressing `Ctrl + C`. However, this action does not automatically close the Chrome browsers, which can cause your computer to hang due to resource overuse.
 
-![Many Chrome processes running in Task Manager](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/chrome-running.png)
+![Many Chrome processes running in Task Manager](https://raw.githubusercontent.com/omkarcloud/flute/master/images/chrome-running.png)
 
 To prevent your PC from hanging, you need to close all running Chrome instances. Here’s a simple method to do it using a Python shell:
 
@@ -716,7 +716,7 @@ To prevent your PC from hanging, you need to close all running Chrome instances.
 2. In the Python shell, enter the following commands:
 
 ```python
-from botasaurus.close_chrome import close_all_chrome_browsers
+from flute.close_chrome import close_all_chrome_browsers
 close_all_chrome_browsers() 
 ```
 
@@ -728,10 +728,10 @@ close_all_chrome_browsers()
 
 ### Conclusion
 
-Botasaurus is a powerful, flexible tool for web scraping. 
+flute is a powerful, flexible tool for web scraping. 
 
-Its various settings allow you to tailor the scraping process to your specific needs, improving both efficiency and convenience. Whether you're dealing with multiple data points, requiring parallel processing, or need to cache results, Botasaurus provides the features to streamline your scraping tasks.
+Its various settings allow you to tailor the scraping process to your specific needs, improving both efficiency and convenience. Whether you're dealing with multiple data points, requiring parallel processing, or need to cache results, flute provides the features to streamline your scraping tasks.
 
-## 🚀 Deep Dive into Botasaurus
+## 🚀 Deep Dive into flute
 
 📚 **Read the Sign Up Tutorial** [here](sign-up-tutorial.md) to learn the knowledge to create 100's of Accounts on a Website! 🚀

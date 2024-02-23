@@ -300,7 +300,7 @@ def create_options_and_driver_attributes_and_close_proxy(tiny_profile, profile, 
         driver_attributes['profile'] = profile
 
         if proxy is not None:
-            from botasaurus_proxy_authentication import add_proxy_options
+            from flute_proxy_authentication import add_proxy_options
             options = add_proxy_options(options, proxy)
         
             return options, driver_attributes, options.close_proxy

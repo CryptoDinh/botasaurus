@@ -17,11 +17,11 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/what-is-botasaurus/">
-            What is Botasaurus 🤔?
+            to="/docs/what-is-flute/">
+            What is flute 🤔?
           </Link>
           <iframe
-            src="https://ghbtns.com/github-btn.html?user=omkarcloud&repo=botasaurus&type=star&count=true&size=large"
+            src="https://ghbtns.com/github-btn.html?user=omkarcloud&repo=flute&type=star&count=true&size=large"
             frameBorder={0}
             scrolling={'0'}
             width={170}
@@ -39,7 +39,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   return (
     <Layout
-      title={`Botasaurus Framework`}
+      title={`flute Framework`}
       description="The Ultimate Web Scraping Framework">
       <HomepageHeader />
       <main>

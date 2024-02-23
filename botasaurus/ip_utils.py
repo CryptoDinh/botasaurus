@@ -1,7 +1,7 @@
 import requests
 from requests.exceptions import ReadTimeout
 import traceback
-from .botasaurus_storage import BotasaurusStorage
+from .flute_storage import fluteStorage
 
 def create_proxy_dict(proxy_url: str) -> dict:
     """Converts a proxy URL string into a dictionary for the requests library."""
@@ -30,11 +30,11 @@ def find_ip(attempts=5, proxy=None) -> str:
 
 def load_cache() -> dict:
     """Loads the IP details cache from a file."""
-    return BotasaurusStorage.get_item("ip_details_cache", {})
+    return fluteStorage.get_item("ip_details_cache", {})
 
 def save_cache(cache: dict):
     """Saves the IP details cache to a file."""
-    return BotasaurusStorage.set_item("ip_details_cache", cache)
+    return fluteStorage.set_item("ip_details_cache", cache)
 
 def find_ip_details( proxy=None, max_retries=5,):
     """Finds details about the current public IP address."""

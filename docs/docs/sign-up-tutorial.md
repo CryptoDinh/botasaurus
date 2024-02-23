@@ -18,7 +18,7 @@ Sometimes, data is hidden behind an authentication wall, requiring you to sign u
 
 This tutorial will guide you through creating multiple accounts on the Omkar Cloud website with email verification.
 
-And the best part? You'll do it in less than 100 lines of code using Botasaurus.
+And the best part? You'll do it in less than 100 lines of code using flute.
 
 So, are you ready to build your bot army?
 
@@ -28,29 +28,29 @@ Let's get started :)
 
 **Note: Please note that it is important to use this functionality ethically and only for legitimate purposes.** 
 
-<!-- ## 💡 Understanding Botasaurus
+<!-- ## 💡 Understanding flute
 
-Before we dive into creating a Sign Up Bot, let's quickly grasp how Botasaurus works with a simple example.
+Before we dive into creating a Sign Up Bot, let's quickly grasp how flute works with a simple example.
 
 In this simple example, we'll walk through the process of scraping the heading text from [https://www.omkar.cloud/](https://www.omkar.cloud/).
 
 ![](/img/starter-bot-running.gif)
 
-### Step 1: Install Botasaurus
+### Step 1: Install flute
 
-Start by installing Botasaurus with the help of this command:
+Start by installing flute with the help of this command:
 
 ```shell
-python -m pip install botasaurus
+python -m pip install flute
 ```
 
-### Step 2: Set Up Your Botasaurus Project
+### Step 2: Set Up Your flute Project
 
-1. Create a directory for our Botasaurus project and navigate to it:
+1. Create a directory for our flute project and navigate to it:
 
 ```shell
-mkdir my-botasaurus-project
-cd my-botasaurus-project
+mkdir my-flute-project
+cd my-flute-project
 code .  # Optionally, open the project in VSCode
 ```
 
@@ -59,13 +59,13 @@ code .  # Optionally, open the project in VSCode
 Within your project directory, create a Python script named `main.py` and paste the following code into `main.py`:
 
 ```python
-from botasaurus.launch_tasks import launch_tasks
-from botasaurus import *
+from flute.launch_tasks import launch_tasks
+from flute import *
 
 # Define a custom scraping Task
 class ScrapeHeadingTask(BaseTask):
 
-    def run(self, driver: BotasaurusDriver, data):
+    def run(self, driver: fluteDriver, data):
         # Visit the Omkar Cloud website
         driver.get("https://www.omkar.cloud/")
 
@@ -89,9 +89,9 @@ Let's break down this code:
 class ScrapeHeadingTask(BaseTask):
 ```  
 
-- Inside the `run` method, we are automatically passed a Selenium driver by Botasaurus.
+- Inside the `run` method, we are automatically passed a Selenium driver by flute.
 ```python
-    def run(self, driver: BotasaurusDriver, data):
+    def run(self, driver: fluteDriver, data):
 ```  
 
 - In the `run` method:
@@ -200,7 +200,7 @@ Names like `XAEA-12 Musk` are likely to be flagged as bots and suspended by targ
 
 Instead of relying on purely random generation, we could use the Account Generator Module, which provides human-like data.
 
-![Account](https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/generated-account.png)
+![Account](https://raw.githubusercontent.com/omkarcloud/flute/master/images/generated-account.png)
 
 Accounts produced by the Account Generator Module are so humane that it's nearly impossible to detect whether the account belongs to a human or a bot.
 
@@ -241,7 +241,7 @@ sign_up_button.click()
 
 However, this approach is verbose and prone to bugs. 
 
-Thankfully, with the driver provided by Botasaurus, we can achieve the same logic in a cleaner manner as follows:
+Thankfully, with the driver provided by flute, we can achieve the same logic in a cleaner manner as follows:
 
 ```python
 driver.type('input[name="name"]', name)
@@ -274,7 +274,7 @@ A standard practice during the registration process on many websites, including 
 
 To complete the sign-up, we must retrieve and open this link. But how can we do that?
 
-Thankfully, Botasaurus comes to the rescue with its `TempMail` module. 
+Thankfully, flute comes to the rescue with its `TempMail` module. 
 
 TempMail module allows us to create a temporary email address and receive emails.
 
@@ -312,9 +312,9 @@ options.add_argument(f'--user-data-dir={profile_path}')
 driver = webdriver.Chrome(executable_path=driver_path, options=options)
 ```
 
-### Botasaurus Simplifies Chrome Profiles
+### flute Simplifies Chrome Profiles
 
-Botasaurus simplifies this process, making profile configuration straightforward. To use a profile, simply specify it in the decorator:
+flute simplifies this process, making profile configuration straightforward. To use a profile, simply specify it in the decorator:
 
 ```python
 @browser(profile='my-profile',)
@@ -326,7 +326,7 @@ def create_accounts(driver: AntiDetectDriver, account):
 
 Regular Chrome Profiles can be heavy on storage. They can easily balloon to 100MBs after just a few runs, making it hard to store thousands of such profiles on your PC. 
 
-Botasaurus offers a solution with its `tiny_profile` feature. It ensures only the cookies persist, slashing the profile size from the whopping 100MBs to a mere 1KB.
+flute offers a solution with its `tiny_profile` feature. It ensures only the cookies persist, slashing the profile size from the whopping 100MBs to a mere 1KB.
 
 ![](/img/tiny_profile.png)
 
@@ -381,7 +381,7 @@ Here's how it works:
 
 ### Storing Profile Details for Future Use
 
-Botasaurus introduces a `Profile` Module specifically designed for easy account management. With this module, you can easily:
+flute introduces a `Profile` Module specifically designed for easy account management. With this module, you can easily:
 
 - Save important account details such as name, email, and password or any other key-value metadata like `api_key` related to the current profile.
 - List and remove profiles as needed.
@@ -421,7 +421,7 @@ While this seems basic, it provides a foundation for understanding how profiles 
 This code enables the capture of screenshots for each created account:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @browser(
     data = lambda: bt.Profile.get_profiles(),
@@ -499,7 +499,7 @@ Loading css, image resources can have a couple of significant downsides like:
 - Being heavy on the wallet, especially if you're using residential proxies, which can be very expensive, costing around $15/GB.
 - Wasting your time by slowing down the scraping process due to image loading.
 
-### The Solution with Botasaurus
+### The Solution with flute
 
 By blocking css, images etc from loading, we can achieve faster scraping and also a healthier wallet.
 
@@ -523,7 +523,7 @@ Finally, it's time to put all the pieces together. Follow these steps to create 
 1. Create a Python script named `main.py` and paste the following code into `main.py`:
 
 ```python
-from botasaurus import *
+from flute import *
 
 @browser(
     data = lambda: bt.generate_users(3, country=bt.Country.IN),
@@ -615,7 +615,7 @@ Screenshots of each user's dashboard will be captured and placed in the respecti
 After inspecting the output, I encourage you to read the final code provided below to grasp the underlying logic and understand how the pieces fit together.
 
 ```python
-from botasaurus import *
+from flute import *
 
 @browser(
     data = lambda: bt.generate_users(3, country=bt.Country.IN),
@@ -661,7 +661,7 @@ if __name__ == "__main__":
 
 ## 🎉 What's Next?
 
-Congratulations, friend, on reaching the end of the tutorial. By now, you have mastered the basics of working with Botasaurus!
+Congratulations, friend, on reaching the end of the tutorial. By now, you have mastered the basics of working with flute!
 
 Next, we'll enhance your web scraping toolbox by diving into an interesting project: *Scraping Google Maps for Lead Generation*.
 
@@ -671,8 +671,8 @@ By scraping Google Maps, we can access phone numbers and websites of businesses.
 
 In this tutorial, not only will you develop a practical scraping tool, but you will also gain hands-on experience in:
 - Running bots in parallel for faster scraping.
-- Understanding the overall process of a web scraping project with Botasaurus.
+- Understanding the overall process of a web scraping project with flute.
 - Saving the extracted data in both CSV and JSON formats.
 - Setting up your scraper in a Docker environment for consistent and reproducible execution.
 
-Once you complete this tutorial, you'll have achieved mastery over Botasaurus. Dive into the tutorial [here](google-maps-scraping-tutorial.md).
+Once you complete this tutorial, you'll have achieved mastery over flute. Dive into the tutorial [here](google-maps-scraping-tutorial.md).

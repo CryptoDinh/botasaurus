@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "🤖 Botasaurus Framework 🤖",
-  tagline: "Botasaurus is a Swiss Army knife 🔪 for web scraping and browser automation 🤖 that helps you create bots fast. ⚡️",
+  title: "🤖 flute Framework 🤖",
+  tagline: "flute is a Swiss Army knife 🔪 for web scraping and browser automation 🤖 that helps you create bots fast. ⚡️",
   url: "https://www.omkar.cloud",
   trailingSlash: true,
 
@@ -18,15 +18,15 @@ const config = {
       async: true,
     },
     {
-      src: "/botasaurus/ga.js",
+      src: "/flute/ga.js",
     },
   ],
-  baseUrl: "/botasaurus/",
+  baseUrl: "/flute/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "omkarcloud", // Usually your GitHub org/user name.
-  projectName: "botasaurus", // Usually your repo name.
+  projectName: "flute", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -49,7 +49,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/omkarcloud/botasaurus/blob/master/docs",
+            "https://github.com/omkarcloud/flute/blob/master/docs",
         },
         blog: false,
         theme: {
@@ -70,10 +70,10 @@ const config = {
       // Replace with your project's social card
       image: "img/twitter-card.png",
       navbar: {
-        title: "Botasaurus",
+        title: "flute",
         logo: {
-          alt: "Botasaurus Logo",
-          src: "https://raw.githubusercontent.com/omkarcloud/botasaurus/master/images/mascot-logo.png",
+          alt: "flute Logo",
+          src: "https://raw.githubusercontent.com/omkarcloud/flute/master/images/mascot-logo.png",
         },
         items: [
           {
@@ -84,7 +84,7 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: "https://github.com/omkarcloud/botasaurus",
+            href: "https://github.com/omkarcloud/flute",
             label: "Love It? Star It! ★",
             position: "right",
           },
@@ -97,8 +97,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "What is Botasaurus?",
-                to: "/docs/what-is-botasaurus/",
+                label: "What is flute?",
+                to: "/docs/what-is-flute/",
               },
             ],
           },
@@ -107,11 +107,11 @@ const config = {
             items: [
               // {
               //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/botasaurus',
+              //   href: 'https://stackoverflow.com/questions/tagged/flute',
               // },
               {
                 label: "GitHub Discuss",
-                href: "https://github.com/omkarcloud/botasaurus/discussions",
+                href: "https://github.com/omkarcloud/flute/discussions",
               },
             ],
           },
@@ -124,7 +124,7 @@ const config = {
               // },
               {
                 label: "GitHub",
-                href: "https://github.com/omkarcloud/botasaurus",
+                href: "https://github.com/omkarcloud/flute",
               },
             ],
           },
